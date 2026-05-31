@@ -1,0 +1,16 @@
+---
+description: Minimal router that tells agents when to load project skills.
+alwaysApply: true
+---
+
+# Skill Router
+
+Before implementing, check whether a project skill applies:
+
+- TypeScript, Node, Nest, Angular, Bootstrap, CSS, reusable UI, or module structure: read `.cursor/skills/ts-fullstack/SKILL.md`.
+- Landing pages, dashboards, redesigns, SaaS UI, marketing pages, Framer Motion, or high-polish web design: read `.cursor/skills/design-pro-max/SKILL.md`.
+- Labels, buttons, messages, placeholders, validation text, or any user-facing copy: read `.cursor/skills/i18n-labels/SKILL.md`.
+- API work that creates or changes database tables, columns, indexes, constraints, seeds, or SQL: read `.cursor/skills/postgres-migrations/SKILL.md`.
+- AI agents, LLM pipelines, embeddings, vector search, RAG, chunking, or Qdrant: read `.cursor/skills/ai-langchain-rag/SKILL.md`.
+
+Load only the matching skill. If multiple apply, load the smallest set needed.

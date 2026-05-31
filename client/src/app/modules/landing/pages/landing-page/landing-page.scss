@@ -1,0 +1,10 @@
+:host {
+  display: block;
+  background: var(--bg-deep);
+  color: var(--ink-primary);
+}
+
+.landing {
+  position: relative;
+  isolation: isolate;
+}

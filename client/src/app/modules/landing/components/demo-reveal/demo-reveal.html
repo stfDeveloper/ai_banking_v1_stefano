@@ -1,0 +1,67 @@
+<section id="demo" class="demo" aria-labelledby="demo-title">
+  <div class="container">
+    <header class="section-head" appReveal="fade">
+      <p class="eyebrow">{{ 'landing.demo.eyebrow' | t }}</p>
+      <h2 id="demo-title">{{ 'landing.demo.title' | t }}</h2>
+    </header>
+
+    <article class="demo-report" appReveal="fade">
+      <header class="demo-report__header">
+        <h3 class="demo-report__title">{{ 'landing.demo.reportTitle' | t }}</h3>
+        <span class="demo-report__code">REP-2024-0457</span>
+      </header>
+
+      <section class="demo-report__section">
+        <h4 class="demo-report__h">{{ 'landing.demo.contractLabel' | t }}</h4>
+        <dl class="demo-report__dl">
+          @for (row of contract(); track row.k) {
+            <div class="demo-report__row">
+              <dt>{{ row.k }}</dt>
+              <dd>{{ row.v }}</dd>
+            </div>
+          }
+        </dl>
+      </section>
+
+      <section class="demo-report__section">
+        <h4 class="demo-report__h">{{ 'landing.demo.discrepancyLabel' | t }}</h4>
+        <ul class="demo-report__discrepancies">
+          @for (d of discrepancies(); track d.label) {
+            <li class="demo-disc">
+              <span class="disc-badge">{{ d.severity }}</span>
+              <span class="demo-disc__label">{{ d.label }}</span>
+            </li>
+          }
+          <li class="demo-disc demo-disc--hidden">
+            <span class="demo-disc__redacted" aria-hidden="true"></span>
+            <span class="demo-disc__redacted demo-disc__redacted--short" aria-hidden="true"></span>
+          </li>
+          <li class="demo-disc demo-disc--hidden">
+            <span class="demo-disc__redacted" aria-hidden="true"></span>
+            <span class="demo-disc__redacted demo-disc__redacted--med" aria-hidden="true"></span>
+          </li>
+          <li class="demo-disc demo-disc--hidden">
+            <span class="demo-disc__redacted" aria-hidden="true"></span>
+            <span class="demo-disc__redacted demo-disc__redacted--med" aria-hidden="true"></span>
+          </li>
+          <li class="demo-disc demo-disc--counter">
+            + {{ 'landing.demo.hiddenCount' | t }}
+          </li>
+        </ul>
+      </section>
+
+      <section class="demo-report__estimate">
+        <span class="demo-report__estimate-label">{{ 'landing.demo.estimateLabel' | t }}</span>
+        <span class="demo-report__estimate-value">{{ 'landing.demo.estimateBlur' | t }}</span>
+      </section>
+
+      <div class="demo-report__overlay">
+        <p class="demo-report__overlay-title">{{ 'landing.demo.overlayTitle' | t }}</p>
+        <p class="demo-report__overlay-body">{{ 'landing.demo.overlayBody' | t }}</p>
+        <a class="btn btn-gold btn-lg" appMagnetic href="#hero">
+          {{ 'landing.demo.overlayCta' | t }}
+        </a>
+      </div>
+    </article>
+  </div>
+</section>

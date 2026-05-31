@@ -1,0 +1,65 @@
+.audience {
+  background: var(--bg-deep);
+}
+
+.audience__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+  margin-top: var(--sp-12);
+}
+
+@media (min-width: 768px) {
+  .audience__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.audience-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding: var(--sp-8) var(--sp-6) var(--sp-6);
+}
+
+.audience-card__num {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.2em;
+  color: var(--gold-300);
+}
+
+.audience-card__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  color: var(--ink-primary);
+  line-height: 1.25;
+}
+
+.audience-card__body {
+  color: var(--ink-secondary);
+  font-size: var(--fs-md);
+  line-height: 1.55;
+}
+
+.audience-card__list {
+  margin-top: var(--sp-3);
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.audience-card__list li {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  color: var(--ink-primary);
+  font-size: var(--fs-sm);
+}
+
+.audience-card__list svg {
+  color: var(--emerald-400);
+  flex-shrink: 0;
+}

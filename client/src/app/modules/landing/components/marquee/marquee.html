@@ -1,0 +1,8 @@
+<div class="marquee" [class.marquee--pausable]="pauseOnHover" [style.--marquee-duration.s]="duration">
+  <div class="marquee__track">
+    @for (item of loopItems; track $index) {
+      <span class="marquee__item">{{ item }}</span>
+      <span class="marquee__sep" aria-hidden="true">·</span>
+    }
+  </div>
+</div>

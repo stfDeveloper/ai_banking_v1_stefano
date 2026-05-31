@@ -1,0 +1,12 @@
+---
+description: Require UI labels and user-facing text to use localized it.json translations.
+alwaysApply: true
+---
+
+# I18n Labels
+
+- Never hardcode labels or user-facing text in HTML templates or TypeScript.
+- Store new UI text in `it.json` using the existing translation key structure.
+- Reference labels through the project translation mechanism, not inline strings.
+- When editing existing text, update the translation key/value instead of duplicating hardcoded copy.
+- For i18n-heavy changes, read `.cursor/skills/i18n-labels/SKILL.md`.

@@ -1,0 +1,36 @@
+<section id="flow" class="flow" aria-labelledby="flow-title">
+  <div class="container">
+    <header class="section-head" appReveal="fade">
+      <p class="eyebrow">{{ 'landing.flow.eyebrow' | t }}</p>
+      <h2 id="flow-title">{{ 'landing.flow.title' | t }}</h2>
+    </header>
+
+    <div class="flow__layout">
+      <ol class="flow__steps" appReveal="stagger">
+        @for (step of steps(); track step.num) {
+          <li class="flow-step">
+            <span class="flow-step__num">{{ step.num }}</span>
+            <div class="flow-step__body">
+              <h3 class="flow-step__title">{{ step.title }}</h3>
+              <p class="flow-step__text">{{ step.body }}</p>
+              @if (step.cta) {
+                <a class="btn-link" href="#">{{ step.cta }}</a>
+              }
+            </div>
+          </li>
+        }
+      </ol>
+
+      <aside class="flow__cell" aria-hidden="true">
+        <app-cell-mock />
+      </aside>
+    </div>
+
+    <div class="flow__cta" appReveal="fade">
+      <a class="btn btn-gold btn-lg" appMagnetic href="#hero">
+        {{ 'landing.flow.cta' | t }}
+      </a>
+      <span class="flow__help">{{ 'landing.flow.help' | t }}</span>
+    </div>
+  </div>
+</section>

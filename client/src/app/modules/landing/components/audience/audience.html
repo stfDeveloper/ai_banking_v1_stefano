@@ -1,0 +1,29 @@
+<section id="audience" class="audience" aria-labelledby="audience-title">
+  <div class="container">
+    <header class="section-head" appReveal="fade">
+      <p class="eyebrow">{{ 'landing.audience.eyebrow' | t }}</p>
+      <h2 id="audience-title">{{ 'landing.audience.title' | t }}</h2>
+    </header>
+
+    <div class="audience__grid" appReveal="stagger">
+      @for (card of cards(); track card.title; let i = $index) {
+        <article class="audience-card card-doc">
+          <span class="audience-card__num">{{ (i + 1).toString().padStart(2, '0') }}</span>
+          <h3 class="audience-card__title">{{ card.title }}</h3>
+          <p class="audience-card__body">{{ card.body }}</p>
+          <ul class="audience-card__list">
+            @for (item of card.items; track item) {
+              <li>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                {{ item }}
+              </li>
+            }
+          </ul>
+        </article>
+      }
+    </div>
+  </div>
+</section>

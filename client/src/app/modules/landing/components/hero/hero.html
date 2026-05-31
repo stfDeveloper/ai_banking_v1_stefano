@@ -1,0 +1,51 @@
+<section id="hero" class="hero" aria-labelledby="hero-title">
+  <app-aurora-bg />
+
+  <div class="container hero__inner">
+    <div class="hero__copy" appReveal="fade">
+      <p class="eyebrow hero__eyebrow">{{ 'landing.hero.eyebrow' | t }}</p>
+      <h1 id="hero-title" class="hero__title">{{ 'landing.hero.title' | t }}</h1>
+      <p class="lead hero__subtitle">{{ 'landing.hero.subtitle' | t }}</p>
+
+      <div class="hero__ctas">
+        <a class="btn btn-gold btn-lg" appMagnetic href="#flow">
+          {{ 'landing.hero.primaryCta' | t }}
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+        <a class="btn btn-ghost btn-lg" href="#demo">{{ 'landing.hero.secondaryCta' | t }}</a>
+      </div>
+
+      <p class="hero__microcopy">{{ 'landing.hero.microcopy' | t }}</p>
+
+      <ul class="hero__proof" appReveal="stagger" aria-label="Prove sociali">
+        <li class="proof-chip">
+          <span class="proof-chip__dot"></span>
+          {{ 'landing.hero.proofOne' | t }}
+        </li>
+        <li class="proof-chip">
+          <span class="proof-chip__dot"></span>
+          {{ 'landing.hero.proofTwo' | t }}
+        </li>
+        <li class="proof-chip">
+          <span class="proof-chip__dot"></span>
+          {{ 'landing.hero.proofThree' | t }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="hero__visual" appReveal="scale">
+      <div class="hero__cell-wrap">
+        <app-cell-mock />
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__bridge container" aria-hidden="true">
+    <span class="hero__bridge-line"></span>
+    <span class="hero__bridge-text">{{ 'landing.hero.bridge' | t }}</span>
+  </div>
+</section>

@@ -1,0 +1,502 @@
+{
+  "brand": {
+    "name": "Check-up Bancario",
+    "payoff": "Specialisti nel controllo del credito"
+  },
+  "landing": {
+    "nav": {
+      "method": "Metodo",
+      "cases": "Casi",
+      "authority": "Antonio Annibali",
+      "tool": "Strumento AI",
+      "cta": "Avvia pre-analisi",
+      "skipLink": "Vai al contenuto"
+    },
+    "hero": {
+      "eyebrow": "Analisi mutui con AI + matematici, con il Prof. Antonio Annibali al tavolo",
+      "title": "La banca paga sempre se sbaglia.\nLa domanda è: sta sbagliando con te?",
+      "subtitle": "Carica il PDF del tuo mutuo, del leasing o del finanziamento. Il nostro sistema lo legge in pochi minuti e ti dice se ci sono discrepanze degne di approfondimento. Non costa niente. Non ti facciamo perdere tempo.",
+      "primaryCta": "Avvia la pre-analisi gratuita",
+      "secondaryCta": "Vedi un esempio di analisi",
+      "proofOne": "10 cause portate, 8 vinte",
+      "proofTwo": "400.000 € restituiti ai clienti",
+      "proofThree": "Prof. Antonio Annibali al nostro tavolo",
+      "microcopy": "Nessuna carta di credito. Risposta entro 24 ore. I tuoi documenti restano tuoi.",
+      "bridge": "Ecco cosa c'è dietro i mutui italiani oggi."
+    },
+    "cell": {
+      "statusTime": "9:41",
+      "appTitle": "Check-up Bancario",
+      "stepEmptyTitle": "Carica il PDF del tuo mutuo",
+      "stepEmptyHint": "Mutuo, leasing, finanziamento, conto corrente",
+      "stepEmptyCta": "Scegli un file PDF",
+      "stepLoadingTitle": "Analisi in corso…",
+      "stepLoadingItems": [
+        "Estraggo il piano di ammortamento",
+        "Verifico tassi e TAEG dichiarato",
+        "Confronto regime di capitalizzazione",
+        "Calcolo discrepanze"
+      ],
+      "stepResultTitle": "Pre-analisi pronta",
+      "stepResultBody": "Abbiamo trovato segnali che meritano un'analisi più approfondita.",
+      "stepResultBadges": [
+        "Discrasia TAEG",
+        "Mora 2019 da verificare"
+      ],
+      "stepResultCta": "Procedi con l'analisi",
+      "ariaLabel": "Anteprima animata dell'app di analisi mutui su smartphone"
+    },
+    "truth": {
+      "eyebrow": "Il quadro reale",
+      "title": "In Italia oltre 6 milioni di famiglie pagano un mutuo. Non tutte sanno che il piano può contenere errori reali.",
+      "lead": "Tassi BCE che si muovono, rate che cambiano, sospensioni, surroghe, mora calcolata male, TAEG dichiarato in contratto che non torna con quello effettivo. Sono cose che succedono. Non sempre per cattiva fede della banca. Ma succedono. E quando succedono, ci sono soldi che il cliente ha diritto di chiedere indietro.",
+      "kpis": [
+        { "value": "3,43%", "label": "tasso medio nuovi mutui (aprile 2026, ABI)" },
+        { "value": "86%", "label": "nuovi mutui italiani a tasso fisso (Q1 2026, CRIF)" },
+        { "value": "€ 161.000", "label": "importo medio mutuo erogato" },
+        { "value": "25-30 anni", "label": "durata del 43% dei nuovi mutui" }
+      ],
+      "p1": "Più la rata dura, più gli errori si accumulano. Più sono le sospensioni, più il piano viene ricalcolato. Più sono le rinegoziazioni, più tornano interessi da spiegare. Più anni passano, più il rischio che la banca abbia sbagliato cresce.",
+      "p2": "Il problema non è solo umano. È matematico. La differenza tra un piano in capitalizzazione semplice e uno in capitalizzazione composta è la differenza tra qualche migliaio di euro pagati in più o di meno. Su 25 anni, conta.",
+      "bridge": "E al centro del nostro lavoro c'è un nome."
+    },
+    "authority": {
+      "eyebrow": "Chi c'è al nostro tavolo",
+      "title": "Antonio Annibali ha passato decenni a dimostrare che gli interessi nei mutui italiani vanno guardati con un'altra lente. Oggi quella lente è la nostra.",
+      "bio": "Professore ordinario di Matematica Finanziaria all'Università La Sapienza di Roma.\nDocente alla LUISS Guido Carli.\nAttuario incaricato di bilanci tecnici per le casse di previdenza dei dottori commercialisti, della professione infermieristica, degli impiegati in agricoltura.\nHa pubblicato in modo continuo, dal 2016 ad oggi, lavori che dimostrano matematicamente la presenza di anatocismo nei mutui ‘alla francese’ stilati in capitalizzazione composta — lavori che hanno costretto la comunità accademica e i tribunali a guardare il problema più da vicino.\nAnnibali siede al nostro tavolo. È la firma matematica e dottrinale del nostro metodo.",
+      "quote": "L'anatocismo, in matematica finanziaria, è la trasformazione di interessi in capitale. Quando un mutuo è scritto in regime di capitalizzazione composta, escludendo casi limite banali, gli interessi su interessi sono lì, anche se nessuno li ha dichiarati.",
+      "quoteCite": "— Prof. Antonio Annibali, Sulla misura del livello di anatocismo nelle operazioni finanziarie in capitalizzazione composta, 2021",
+      "papersTitle": "Una selezione di pubblicazioni",
+      "papers": [
+        "Anatocismo, metodologie di ammortamento e regimi finanziari (Napoli, 2016)",
+        "Il modello matematico ‘completo’ del calcolo del TEG per la verifica di usura in mutui e finanziamenti (2019)",
+        "Giusta nota per dimostrare la presenza di anatocismo nei mutui ‘alla francese’ in capitalizzazione composta (2019)",
+        "Sulla misura del livello di anatocismo nelle operazioni finanziarie in capitalizzazione composta (2021)",
+        "Contro-rapporto al Rapporto Scientifico AMASES 2022/01 sull'anatocismo nei mutui (2023)"
+      ],
+      "teamEyebrow": "Chi lavora ogni giorno sui contratti",
+      "teamTitle": "I matematici che applicano il metodo, ogni giorno, sui mutui veri",
+      "teamBody": "Annibali ha dato la cornice teorica. Il team matematico che lavora con noi la applica nella pratica quotidiana: legge i piani di ammortamento, verifica i regimi finanziari, calcola le discrepanze, scrive le perizie.\nSono specialisti operativi che hanno lavorato per anni accanto a lui, sui casi reali, e che oggi portano la sua matematica fino alla scrivania del giudice.",
+      "closing": "Quando analizziamo il tuo mutuo, lo facciamo con la matematica di Annibali e con le mani di chi quella matematica la applica ogni giorno. Non con il foglio Excel di tutti.",
+      "ctaLabel": "Scopri il metodo",
+      "bridge": "Vediamo come applichiamo la sua matematica."
+    },
+    "method": {
+      "eyebrow": "Il nostro metodo",
+      "title": "Tre cose insieme: la matematica, l'AI, il diritto. Una senza l'altra non basta.",
+      "cards": [
+        {
+          "key": "math",
+          "title": "Matematica seria, non foglio di calcolo improvvisato",
+          "body": "La filosofia matematica del nostro metodo porta la firma del Prof. Antonio Annibali. Il team operativo che la applica ogni giorno è cresciuto al suo fianco e oggi lavora con strumenti aggiornati su contratti reali. Conosciamo la differenza tra regime semplice e composto, sappiamo cosa succede quando il piano viene ricalcolato dopo una sospensione, sappiamo leggere il TAEG come si deve. Non improvvisiamo perizie: lavoriamo con strumenti accademici."
+        },
+        {
+          "key": "ai",
+          "title": "L'AI fa quello che un consulente da solo non riuscirebbe a fare in tempi umani",
+          "body": "L'umano da solo sbaglia. L'AI da sola sbaglia. Insieme, l'errore si riduce. Il nostro sistema legge il PDF in pochi minuti, estrae il piano di ammortamento, verifica i tassi, confronta i regimi, segnala tutte le discrepanze che meritano una seconda lettura. Tu vedi una prima preview. Il matematico vede il resto."
+        },
+        {
+          "key": "law",
+          "title": "Se la banca ha sbagliato, si va davanti al giudice.",
+          "body": "Il team legale lavora con i nostri matematici da anni. 10 cause portate, 8 vinte. Oltre 400.000 € restituiti ai clienti. Niente anticipi: si lavora a successo. Se non si può fare, te lo diciamo prima di farti perdere tempo."
+        }
+      ],
+      "closingQuote": "Un umano sbaglia.\nUn umano con l'AI sbaglia meno.\nUn umano con l'AI, una squadra di matematici e Annibali al tavolo, una discrepanza la trova.",
+      "bridge": "I numeri di quello che è successo finora."
+    },
+    "results": {
+      "eyebrow": "I numeri reali, aggiornati",
+      "title": "Non promesse. Quello che è successo davvero.",
+      "kpis": [
+        { "value": "10", "label": "cause portate avanti", "unit": "" },
+        { "value": "8/10", "label": "vinte", "unit": "" },
+        { "value": "400000", "label": "restituiti ai nostri clienti", "unit": "€", "prefix": "€ ", "suffix": "+" },
+        { "value": "0", "label": "anticipati dai nostri clienti", "unit": "€", "prefix": "€ " }
+      ],
+      "footnote": "Numeri aggiornati al 25/05/2026. Casistica reale, non simulata. La nostra responsabilità è dirti se vale la pena di muoversi, non promettere risultati che non possiamo garantire.",
+      "ctaLabel": "Vedi le sentenze",
+      "ctaHelp": "Anonimizzate dove richiesto dalla legge.",
+      "bridge": "Adesso vediamo come funziona dal tuo telefono."
+    },
+    "flow": {
+      "eyebrow": "Come funziona, in 5 passaggi",
+      "title": "Cinque passaggi. Niente burocrazia. Niente sorprese.",
+      "steps": [
+        {
+          "num": "01",
+          "title": "Carichi il PDF del mutuo",
+          "body": "Mutuo, leasing, finanziamento, conto corrente: ci basta il piano di ammortamento o il contratto. Non sai dove trovarlo? Hai un breve tutorial: in 60 secondi sai dove cercare nel home banking della tua banca.",
+          "cta": "Vedi tutorial"
+        },
+        {
+          "num": "02",
+          "title": "L'AI legge il documento",
+          "body": "In pochi minuti il sistema estrae le voci principali: capitale, durata, tasso, regime, TAEG dichiarato, condizioni di mora, eventuali sospensioni. Confronta con la matematica corretta. Segnala dove ci sono divergenze."
+        },
+        {
+          "num": "03",
+          "title": "Ricevi una prima preview",
+          "body": "Una pagina di sintesi. Se non c'è nulla, te lo diciamo apertamente: ‘sembra in regola’. Se c'è qualcosa, te lo diciamo nello stesso modo: ‘ci sono X segnali che meritano un'analisi più approfondita’."
+        },
+        {
+          "num": "04",
+          "title": "Ti ricontatta un consulente vero",
+          "body": "Niente bot. Una persona ti chiama o ti scrive, ti chiede i documenti che mancano, ti dice cosa serve per arrivare a una perizia completa. Anche qui, gratis."
+        },
+        {
+          "num": "05",
+          "title": "Se la banca ti deve dei soldi, si parte",
+          "body": "Si formalizza la perizia con il matematico. Si valuta la strategia con il team legale. Si manda la diffida. Se serve, si va davanti al giudice. Tu non anticipi nulla."
+        }
+      ],
+      "cta": "Avvia la pre-analisi",
+      "help": "Caricamento sicuro · I tuoi documenti restano tuoi",
+      "bridge": "Ecco le sei aree in cui la banca sbaglia di più."
+    },
+    "findings": {
+      "eyebrow": "Cosa cerchiamo nel tuo contratto",
+      "title": "Le sei aree in cui le banche, statisticamente, sbagliano di più.",
+      "items": [
+        {
+          "title": "Anatocismo sui conti correnti",
+          "body": "Interessi calcolati sugli interessi quando la legge non lo permetteva. La Corte di Cassazione, ordinanza n. 18664/2023, ha ribadito che il correntista può chiedere la rideterminazione del saldo se l'anatocismo è stato applicato in modo illegittimo.",
+          "tag": "Cass. 18664/2023"
+        },
+        {
+          "title": "Discrasia TAEG / ISC",
+          "body": "Il TAEG indicato sul contratto è diverso da quello effettivamente applicato. Es. Tribunale di Avezzano, sentenza n. 168 del 21/02/2026: piano ricalcolato e oltre 5.900 € restituiti.",
+          "tag": "Trib. Avezzano 168/2026"
+        },
+        {
+          "title": "Mora sopra la soglia di usura",
+          "body": "Tassi di mora applicati oltre il limite legale al momento della stipula. Implica la non debenza degli interessi moratori e, in alcuni casi, conseguenze più ampie sul contratto.",
+          "tag": "art. 644 c.p. / L.108/96"
+        },
+        {
+          "title": "Capitalizzazione composta non trasparente",
+          "body": "Il regime di calcolo non è dichiarato in contratto. Se il maggior costo derivante non è chiarito al cliente, alcune sentenze hanno riconosciuto il ricalcolo in capitalizzazione semplice.",
+          "tag": "art. 117 TUB"
+        },
+        {
+          "title": "Piano ricalcolato male dopo sospensione",
+          "body": "Le moratorie e le sospensioni possono produrre ricalcoli scorretti del capitale residuo e degli interessi. Spesso queste anomalie restano invisibili senza una verifica matematica completa.",
+          "tag": "verifica caso-per-caso"
+        },
+        {
+          "title": "Penali ed estinzione anticipata",
+          "body": "Penali oltre il limite di legge, oneri accessori non inclusi nel TAEG, spese di chiusura non dovute. Tutti elementi su cui si può chiedere il ricalcolo.",
+          "tag": "art. 125 sexies TUB"
+        }
+      ],
+      "disclaimer": "Importante: non tutti i mutui hanno errori. La Corte di Cassazione, Sezioni Unite, sentenza n. 15130 del 2024, ha chiarito che il piano alla francese in sé non è automaticamente anatocistico. Proprio per questo serve un'analisi vera, non un proclama. Noi guardiamo il tuo caso. Se c'è, lo trovi. Se non c'è, te lo diciamo.",
+      "bridge": "Vediamone una al lavoro, oscurata."
+    },
+    "demo": {
+      "eyebrow": "Anteprima di un report reale (anonimizzato)",
+      "title": "Questo è quello che troviamo davvero in un piano di ammortamento.",
+      "reportTitle": "Report di pre-analisi — Mutuo prima casa, durata 25 anni",
+      "contractLabel": "Dati contratto",
+      "contractItems": [
+        { "k": "Importo", "v": "€ 161.000" },
+        { "k": "Durata", "v": "25 anni" },
+        { "k": "Tasso fisso", "v": "3,43% dichiarato" },
+        { "k": "Regime", "v": "Capitalizzazione composta non dichiarata in contratto" }
+      ],
+      "discrepancyLabel": "Discrepanze rilevate",
+      "discrepancies": [
+        { "label": "Differenza TAEG dichiarato / effettivo", "severity": "alta", "visible": true },
+        { "label": "Capitalizzazione composta non trasparente", "severity": "media", "visible": true }
+      ],
+      "hiddenCount": "5 ulteriori discrepanze",
+      "estimateLabel": "Stima differenza",
+      "estimateBlur": "€ ████",
+      "overlayTitle": "Per vedere il dettaglio, ti serve l'analisi completa.",
+      "overlayBody": "Da quello che vediamo qui, è probabile che la banca ti debba dei soldi. Possiamo procedere insieme. Senza anticipi.",
+      "overlayCta": "Procedi con l'analisi del mio mutuo",
+      "bridge": "Capiamo se è il tuo caso."
+    },
+    "audience": {
+      "eyebrow": "Per chi serve",
+      "title": "Tre profili. Stessa analisi seria.",
+      "cards": [
+        {
+          "title": "Privati con mutuo casa",
+          "body": "Mutuo prima casa, seconda casa, ristrutturazione, surroghe. In corso o estinto da meno di 10 anni: la prescrizione lavora a tuo favore se ti muovi adesso.",
+          "items": [
+            "Mutuo prima casa",
+            "Mutuo seconda casa",
+            "Ristrutturazione e green",
+            "Surroghe e rinegoziazioni"
+          ]
+        },
+        {
+          "title": "Aziende e Partite IVA",
+          "body": "Se non controlli il credito, non controlli la tua azienda. Conto corrente aziendale, leasing, finanziamenti a medio termine, anticipo fatture: sono i contratti su cui le banche storicamente applicano più anatocismo.",
+          "items": [
+            "Conto corrente aziendale",
+            "Leasing immobiliare e strumentale",
+            "Finanziamento a medio termine",
+            "Anticipo fatture / castelletto"
+          ]
+        },
+        {
+          "title": "Decreti, precetti, esecuzioni",
+          "body": "Se hai ricevuto un decreto ingiuntivo o un atto di precetto, c'è tempo per analizzare il piano e contestare gli importi non dovuti. Spesso la cifra contestata è molto inferiore a quella richiesta.",
+          "items": [
+            "Decreto ingiuntivo ricevuto",
+            "Atto di precetto",
+            "Pignoramento in corso",
+            "Recupero crediti aggressivo"
+          ]
+        }
+      ],
+      "bridge": "Se invece sei in mezzo a un atto, c'è poco tempo."
+    },
+    "sos": {
+      "eyebrow": "Hai poco tempo. Iniziamo subito.",
+      "title": "SOS bancario: quando l'atto è già arrivato a casa",
+      "lead": "Decreti, precetti, recuperi crediti aggressivi: ci sono scadenze precise. Più passa il tempo, più si stringe lo spazio di manovra. Parla con noi prima di prendere decisioni.",
+      "items": [
+        {
+          "key": "decreto",
+          "title": "Decreto ingiuntivo ricevuto",
+          "deadline": "40 giorni per opporsi",
+          "body": "Il decreto ingiuntivo è un provvedimento sommario: ti ingiunge di pagare entro 40 giorni dalla notifica e ti avverte che in mancanza di opposizione si va all'esecuzione forzata. In quei 40 giorni si può ancora contestare l'importo, verificare il piano, opporre vizi di forma e di merito. Chiamaci lo stesso giorno: la prima telefonata è gratis e ti diciamo se vale la pena di opporsi.",
+          "cta": "Parla con noi adesso"
+        },
+        {
+          "key": "precetto",
+          "title": "Atto di precetto",
+          "deadline": "10 giorni minimo per adempiere",
+          "body": "Il precetto è l'intimazione di pagamento che precede l'esecuzione forzata, fondato su un titolo esecutivo (decreto ingiuntivo, assegno, cambiale). Ci si può opporre in due modi: opposizione all'esecuzione (si discutono le prove) e opposizione agli atti esecutivi (si cercano vizi di forma). Chiamaci: ti diciamo subito quale strada è praticabile per te.",
+          "cta": "Chiamaci"
+        },
+        {
+          "key": "crediti",
+          "title": "Recupero crediti aggressivo",
+          "deadline": "Riguarda anche il debito ceduto",
+          "body": "Hai ricevuto una telefonata o una lettera di una società che ha acquistato il tuo debito? La cessione del credito non rende automaticamente esigibile l'intero importo: spesso, ricalcolando il rapporto originario, la cifra effettivamente dovuta è molto inferiore. Prima di pagare o di negoziare, sentiamoci.",
+          "cta": "Verifica la posizione"
+        },
+        {
+          "key": "altro",
+          "title": "Altre situazioni d'emergenza",
+          "deadline": "Pignoramenti, sospensioni, sollecito",
+          "body": "Pignoramento immobiliare in arrivo, sospensione di un mutuo scaduta male, sollecito di pagamento con condizioni che non tornano, fideiussione attivata: ogni situazione ha le sue scadenze. Se non sai da dove cominciare, comincia da una telefonata: non costa niente capire.",
+          "cta": "Spiegaci il caso"
+        }
+      ],
+      "helpLine": "Numero verde 800 141359 — risponde una persona vera, non un bot.",
+      "disclaimer": "Il primo contatto è gratuito e non costituisce mandato professionale: serve solo a capire se possiamo aiutarti.",
+      "bridge": "Sentiamo chi ci è già passato."
+    },
+    "testimonials": {
+      "eyebrow": "Voci di chi si è affidato a noi",
+      "title": "Sono storie di persone, non di marketing.",
+      "items": [
+        {
+          "quote": "Avevo paura di tutto: paura di buttare via tempo, paura della banca, paura del consulente che mi avrebbe fatto pagare in anticipo. Alla fine mi sono fidato. Tre anni dopo, il mutuo è finito in anticipo e mi hanno restituito 8.500 €.",
+          "amount": "€ 8.500 restituiti + estinzione anticipata",
+          "name": "Cliente A.",
+          "context": "Mutuo prima casa, € 95.000, durata residua 7 anni"
+        },
+        {
+          "quote": "Avevo cinque anni di mutuo ancora da pagare e una rata che era diventata insostenibile. Hanno analizzato il piano in due settimane. Oggi non pago più nulla alla banca e ho ricevuto un rimborso che non immaginavo nemmeno.",
+          "amount": "€ 5.000 restituiti + estinzione",
+          "name": "Cliente B.",
+          "context": "Mutuo prima casa, residuo 5 anni"
+        },
+        {
+          "quote": "Avevo pagato 160 rate del mio mutuo. Pensavo di doverne ancora 116 per arrivare a fine corsa, circa 35.000 € residui. Dopo l'analisi è venuto fuori che in realtà avevo già pagato tutto. Anzi: la banca mi doveva 7.000 €.",
+          "amount": "Mutuo già estinto + € 7.000 da recuperare",
+          "name": "Cliente C.",
+          "context": "Mutuo prima casa, 160 rate pagate su 276"
+        },
+        {
+          "quote": "Avevamo un conto corrente aziendale aperto da 18 anni. Lo abbiamo dato in analisi pensando ‘non troveranno niente’. È venuta fuori una cifra a sei zeri di interessi calcolati in modo scorretto. La banca ha trattato, la causa è stata vinta.",
+          "amount": "Oltre € 150.000 ottenuti in transazione",
+          "name": "Azienda manifatturiera del nord Italia",
+          "context": "Conto corrente aziendale aperto da 18 anni"
+        },
+        {
+          "quote": "La mia rata era di 600 € al mese. Dopo l'analisi e il ricalcolo, è scesa a 256 €. Quello che cambia non è solo il rimborso, è quanto respiri ogni mese.",
+          "amount": "Rata mensile da € 600 a € 256",
+          "name": "Famiglia del centro Italia",
+          "context": "Mutuo prima casa, durata residua 12 anni"
+        }
+      ],
+      "closing": "Se la banca sbaglia, è giusto che paghi. È la frase che ci ripetono i clienti quando finisce tutto. È anche il principio da cui partiamo noi.",
+      "bridge": "Approfondisci con calma, le pillole del matematico."
+    },
+    "pills": {
+      "eyebrow": "Le pillole del matematico",
+      "title": "Quattro video brevi per capire prima di firmare qualunque cosa.",
+      "items": [
+        { "title": "Cos'è l'anatocismo, spiegato in 2 minuti", "duration": "2'18\"" },
+        { "title": "Capitalizzazione composta vs. semplice: la differenza in un disegno", "duration": "3'04\"" },
+        { "title": "Quando la Cassazione n. 15130/2024 vale per te (e quando no)", "duration": "4'12\"" },
+        { "title": "Il rischio della perizia improvvisata: tre errori che si vedono ad occhio", "duration": "3'47\"" }
+      ],
+      "cta": "Vedi tutte le pillole",
+      "bridge": "Cosa scrivono le testate e i tribunali."
+    },
+    "press": {
+      "eyebrow": "Stampa e sentenze",
+      "title": "Cosa dicono di noi e cosa hanno deciso i tribunali.",
+      "papers": [
+        "Il Sole 24 Ore",
+        "Corriere Economia",
+        "La Repubblica Affari & Finanza",
+        "Italia Oggi",
+        "Plus 24"
+      ],
+      "sentencesTitle": "Sentenze rappresentative",
+      "sentences": [
+        "Tribunale di Avezzano, sentenza n. 168 del 21/02/2026 — Mutuo, rimborso di € 5.979,41",
+        "Cass. ord. n. 18664/2023 — Anatocismo illegittimo su conto corrente",
+        "Cass. SU n. 15130/2024 — Limiti del piano alla francese"
+      ],
+      "cta": "Vedi l'elenco completo delle sentenze",
+      "bridge": "Le domande più frequenti, risposte oneste."
+    },
+    "faq": {
+      "eyebrow": "Domande &amp; risposte",
+      "title": "Domande oneste, risposte oneste.",
+      "lead": "Se hai una domanda diversa, scrivici. Risponde una persona vera.",
+      "items": [
+        {
+          "q": "Funziona davvero su qualsiasi mutuo?",
+          "a": "Funziona su quasi tutti i contratti di mutuo, leasing, finanziamento e conto corrente, sia per privati che per aziende. Quello che cambia è il risultato: alcuni contratti sono in regola, altri no. La nostra promessa è dirti la verità su entrambi."
+        },
+        {
+          "q": "Cosa succede se non trovate niente?",
+          "a": "Te lo diciamo apertamente, con la pre-analisi. Niente paga, niente perdita di tempo. In quel caso ti consigliamo cosa controllare in futuro (es. dopo una surroga o una rinegoziazione)."
+        },
+        {
+          "q": "Quanto costa la pre-analisi?",
+          "a": "Zero. È gratuita. La offriamo perché è il modo più onesto di farti capire chi siamo."
+        },
+        {
+          "q": "E la causa? Quanto costa?",
+          "a": "Lavoriamo con un modello a successo, senza anticipi sostanziali del cliente. Se la causa va bene, una parte del recupero copre il lavoro fatto. Le condizioni esatte vengono discusse e firmate prima. Niente sorprese."
+        },
+        {
+          "q": "Quanto può durare?",
+          "a": "La pre-analisi è una questione di pochi minuti per la parte AI e di pochi giorni per la prima risposta umana. La perizia completa richiede 2-4 settimane. La causa, se serve, ha tempi giudiziari italiani: mesi, non giorni. Ma intanto si protegge la posizione."
+        },
+        {
+          "q": "Il mio mutuo è estinto da 8 anni: posso ancora?",
+          "a": "Sì, ma con urgenza. La prescrizione ordinaria è 10 anni dalla chiusura del rapporto. Ogni mese che passa è un mese in meno di cui chiedere il ricalcolo."
+        },
+        {
+          "q": "Posso fare l'analisi anche su un leasing?",
+          "a": "Sì. Il leasing è uno dei contratti su cui troviamo più discrepanze: ammortamenti con regole proprie, indicizzazioni, riscatti. Il principio è lo stesso del mutuo: se il piano è stato applicato male, si può ricalcolare."
+        },
+        {
+          "q": "Cosa fa l'AI, esattamente?",
+          "a": "Legge il PDF, estrae i dati di contratto, ricostruisce il piano di ammortamento, verifica il TAEG dichiarato vs. effettivo, confronta il regime di capitalizzazione, controlla la mora. È un acceleratore della pre-analisi, non sostituisce la perizia del matematico."
+        },
+        {
+          "q": "I miei documenti restano riservati?",
+          "a": "Sì. Vengono caricati in modo cifrato, restano nei nostri sistemi solo per il tempo necessario all'analisi e poi vengono restituiti o cancellati su tua richiesta. Trovi tutto nell'informativa privacy."
+        },
+        {
+          "q": "Cosa cambia rispetto a un altro studio legale o consulente?",
+          "a": "Tre cose: 1) la nostra matematica porta la firma del Prof. Antonio Annibali, una delle voci accademiche più riconosciute sul tema; 2) abbiamo uno strumento AI che fa la pre-analisi in pochi minuti; 3) non ti chiediamo soldi per scoprire se vale la pena di muoversi."
+        },
+        {
+          "q": "Se la Cassazione ha detto che la francese non è anatocistica, perché dovrei rivolgermi a voi?",
+          "a": "Perché l'anatocismo non è l'unica cosa che si può trovare. Discrasia del TAEG, mora oltre soglia, capitalizzazione non dichiarata, errori sul ricalcolo dopo sospensioni, penali fuori legge, oneri non inclusi nel TAEG: sono casi reali, su cui i tribunali continuano a dare ragione ai clienti. Cass. SU 15130/2024 dice che la francese in sé non è anatocistica. Non dice che il tuo piano è privo di errori."
+        }
+      ],
+      "bridge": "OK. Vale la pena di provarci."
+    },
+    "finalCta": {
+      "title": "Se la banca ti deve dei soldi, vale la pena di scoprirlo.\nNon costa niente provarci.",
+      "sub": "Carica ora il PDF del tuo mutuo, del tuo leasing o del tuo finanziamento. Pochi minuti per l'AI. Pochi giorni per la prima risposta umana. Zero anticipi.",
+      "primary": "Avvia la pre-analisi gratuita",
+      "secondary": "Parla con un consulente vero",
+      "microcopy": "Nessuna carta. Nessun bot. Nessun vincolo.\nNon vendiamo perizie. Se non c'è niente, te lo diciamo lo stesso."
+    },
+    "footer": {
+      "payoff": "La verità sulla matematica dei mutui italiani.",
+      "subPayoff": "Costruito con AI, matematica e diritto.",
+      "columns": {
+        "service": {
+          "title": "Servizio",
+          "items": [
+            { "label": "Avvia pre-analisi", "href": "#hero" },
+            { "label": "Come funziona", "href": "#flow" },
+            { "label": "Per privati", "href": "#audience" },
+            { "label": "Per aziende", "href": "#audience" },
+            { "label": "Per studi legali partner", "href": "#contatti" }
+          ]
+        },
+        "method": {
+          "title": "Metodo",
+          "items": [
+            { "label": "Il team matematico", "href": "#authority" },
+            { "label": "Antonio Annibali", "href": "#authority" },
+            { "label": "L'AI: cosa fa, cosa non fa", "href": "#method" },
+            { "label": "Sentenze di riferimento", "href": "#press" },
+            { "label": "Glossario", "href": "/glossario" }
+          ]
+        },
+        "resources": {
+          "title": "Risorse",
+          "items": [
+            { "label": "Pillole del matematico", "href": "#pills" },
+            { "label": "Articoli", "href": "/articoli" },
+            { "label": "Guida: leggere un piano di ammortamento", "href": "/guide/piano-ammortamento" },
+            { "label": "Tutorial: documenti nel home banking", "href": "/guide/documenti" },
+            { "label": "FAQ", "href": "#faq" }
+          ]
+        },
+        "legal": {
+          "title": "Legali",
+          "items": [
+            { "label": "Privacy", "href": "/privacy" },
+            { "label": "Cookie", "href": "/cookie" },
+            { "label": "Termini del servizio", "href": "/termini" },
+            { "label": "Statuto associazione", "href": "/statuto" },
+            { "label": "Accessibility statement", "href": "/accessibilita" }
+          ]
+        }
+      },
+      "contact": {
+        "title": "Contatti",
+        "phone": "800 141 359",
+        "phoneLabel": "Numero verde · risponde una persona vera",
+        "email": "info@checkupbancario.it"
+      },
+      "bottom": "© 2026 Check-up Bancario. Tutti i diritti riservati. P.IVA da definire."
+    }
+  },
+  "ui": {
+    "loading": {
+      "upload": "Carico il PDF in sicurezza…",
+      "parse": "Estraggo il piano di ammortamento…",
+      "verify": "Verifico tassi e regime…",
+      "compare": "Confronto con la matematica corretta…",
+      "summary": "Preparo la pre-analisi…"
+    },
+    "empty": {
+      "uploadTitle": "Non hai ancora caricato nessun documento.",
+      "uploadBody": "Trascina qui un PDF di mutuo, leasing o finanziamento per iniziare.",
+      "uploadCta": "Scegli un PDF"
+    },
+    "error": {
+      "uploadFormat": "Per ora accettiamo solo PDF. Riprova con un file PDF.",
+      "uploadSize": "Il file è troppo grande. Massimo 25MB.",
+      "uploadGeneric": "Non siamo riusciti a leggere il file. Riprova o scrivici, lo apriamo manualmente noi."
+    },
+    "noresult": {
+      "title": "Da quello che vediamo, il tuo contratto sembra in regola.",
+      "body": "Se vuoi un'analisi più approfondita possiamo comunque farla. Alcune discrepanze si vedono solo guardando da vicino il piano completo e le moratorie.",
+      "cta": "Richiedi una verifica manuale"
+    },
+    "gdpr": {
+      "upload": "Caricando il file accetti l'informativa privacy. Il PDF viene cifrato in transito e a riposo, è visibile solo al nostro team di analisi e viene conservato il tempo strettamente necessario all'analisi."
+    }
+  }
+}

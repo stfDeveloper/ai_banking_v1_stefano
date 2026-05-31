@@ -1,0 +1,41 @@
+<section id="faq" class="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <header class="section-head" appReveal="fade">
+      <p class="eyebrow">{{ 'landing.faq.eyebrow' | t }}</p>
+      <h2 id="faq-title">{{ 'landing.faq.title' | t }}</h2>
+      <p class="lead">{{ 'landing.faq.lead' | t }}</p>
+    </header>
+
+    <div class="faq__list" appReveal="fade">
+      @for (item of items(); track item.q; let i = $index) {
+        <div class="faq-item" [class.is-open]="openIdx() === i">
+          <button
+            type="button"
+            class="faq-item__trigger focusable"
+            (click)="toggle(i)"
+            [attr.aria-expanded]="openIdx() === i"
+            [attr.aria-controls]="'faq-panel-' + i"
+            [id]="'faq-trigger-' + i"
+          >
+            <span class="faq-item__q">{{ item.q }}</span>
+            <span class="faq-item__sign" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+          </button>
+          <div
+            class="faq-item__panel"
+            [id]="'faq-panel-' + i"
+            role="region"
+            [attr.aria-labelledby]="'faq-trigger-' + i"
+            [attr.aria-hidden]="openIdx() !== i"
+          >
+            <p>{{ item.a }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

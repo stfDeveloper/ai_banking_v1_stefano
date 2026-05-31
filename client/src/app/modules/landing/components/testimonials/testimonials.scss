@@ -1,0 +1,133 @@
+.testimonials {
+  background: var(--bg-deep);
+}
+
+.tst {
+  margin-top: var(--sp-12);
+  max-width: 920px;
+  margin-inline: auto;
+}
+
+.tst__stage {
+  position: relative;
+  min-height: 360px;
+}
+
+@media (min-width: 768px) {
+  .tst__stage {
+    min-height: 300px;
+  }
+}
+
+.tst-card {
+  position: absolute;
+  inset: 0;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-xl);
+  padding: var(--sp-8) var(--sp-6) var(--sp-6);
+  box-shadow: var(--elev-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  transition: opacity var(--dur-4) var(--ease-out), transform var(--dur-4) var(--ease-out);
+  pointer-events: none;
+}
+
+.tst-card.is-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.tst-card__quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 0.95rem + 0.6vw, 1.5rem);
+  line-height: 1.45;
+  color: var(--ink-primary);
+  margin: 0;
+  border-left: 3px solid var(--gold-400);
+  padding-left: var(--sp-5);
+}
+
+.tst-card__amount {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 1.2rem + 1vw, 2.25rem);
+  color: var(--emerald-400);
+  letter-spacing: -0.01em;
+}
+
+.tst-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--border-soft);
+  color: var(--ink-muted);
+  font-size: var(--fs-sm);
+}
+
+.tst-card__name {
+  color: var(--ink-primary);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.tst__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sp-4);
+  margin-top: var(--sp-6);
+}
+
+.tst__btn {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: var(--bg-translucent);
+  border: 1px solid var(--border-soft);
+  border-radius: 50%;
+  color: var(--ink-primary);
+  transition: background var(--dur-2) var(--ease-out), border-color var(--dur-2) var(--ease-out);
+}
+
+.tst__btn:hover {
+  background: var(--bg-elevated);
+  border-color: var(--border-strong);
+}
+
+.tst__dots {
+  display: flex;
+  gap: var(--sp-2);
+}
+
+.tst__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--border-default);
+  background: transparent;
+  transition: background var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out);
+}
+
+.tst__dot.is-active {
+  background: var(--gold-400);
+  border-color: var(--gold-400);
+  transform: scale(1.2);
+}
+
+.testimonials__closing {
+  margin-top: var(--sp-12);
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1rem + 0.6vw, 1.6rem);
+  color: var(--ink-primary);
+  line-height: 1.4;
+  text-align: center;
+  max-width: 720px;
+  margin-inline: auto;
+  font-style: italic;
+}

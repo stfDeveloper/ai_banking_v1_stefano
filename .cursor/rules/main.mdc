@@ -1,0 +1,14 @@
+---
+description: Minimal project doctrine for high-signal engineering work.
+alwaysApply: true
+---
+
+# Main Rule
+
+- Read existing code before changing it; existing patterns are the source of truth.
+- Communicate with maximum signal: lead with the result, keep plans and reports short, skip filler.
+- Treat every feature as a module with clear boundaries, reusable parts, and matching client/API structure when both sides exist.
+- Prefer typed, explicit code. Avoid `any`, hidden state, stringly contracts, and broad abstractions.
+- Regex is banned unless the user explicitly approves a narrow exception; prefer parsers, validators, URL/path APIs, SQL, or typed logic.
+- Never commit secrets or print secret values. Keep environment-specific values in env/config.
+- For behavioral changes, verify with the smallest relevant lint, typecheck, test, or manual proof available.

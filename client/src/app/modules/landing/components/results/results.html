@@ -1,0 +1,36 @@
+<section id="results" class="results" aria-labelledby="results-title">
+  <div class="container">
+    <header class="section-head section-head--center" appReveal="fade">
+      <p class="eyebrow">{{ 'landing.results.eyebrow' | t }}</p>
+      <h2 id="results-title">{{ 'landing.results.title' | t }}</h2>
+    </header>
+
+    <ul class="results__wall" appReveal="stagger">
+      @for (kpi of kpis(); track kpi.label) {
+        <li class="results__tile">
+          <span class="results__value">
+            @if (numericTarget(kpi.value); as target) {
+              <span
+                [appCountUp]="target"
+                [prefix]="kpi.prefix || ''"
+                [suffix]="kpi.suffix || ''"
+              ></span>
+            } @else {
+              {{ kpi.value }}
+            }
+          </span>
+          <span class="results__label">{{ kpi.label }}</span>
+        </li>
+      }
+    </ul>
+
+    <p class="results__footnote">{{ 'landing.results.footnote' | t }}</p>
+
+    <div class="results__ctas">
+      <a class="btn btn-ghost" appMagnetic href="#press">
+        {{ 'landing.results.ctaLabel' | t }}
+      </a>
+      <span class="results__help">{{ 'landing.results.ctaHelp' | t }}</span>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+<section id="findings" class="findings" aria-labelledby="findings-title">
+  <div class="container">
+    <header class="section-head" appReveal="fade">
+      <p class="eyebrow">{{ 'landing.findings.eyebrow' | t }}</p>
+      <h2 id="findings-title">{{ 'landing.findings.title' | t }}</h2>
+    </header>
+
+    <div class="findings__grid" appReveal="stagger">
+      @for (item of items(); track item.title; let i = $index) {
+        <article class="finding" [class.finding--wide]="i === 0 || i === 5">
+          <span class="finding__num">{{ (i + 1).toString().padStart(2, '0') }}</span>
+          <h3 class="finding__title">{{ item.title }}</h3>
+          <p class="finding__body">{{ item.body }}</p>
+          <span class="tag-norm">{{ item.tag }}</span>
+        </article>
+      }
+    </div>
+
+    <p class="findings__disclaimer" appReveal="fade">
+      {{ 'landing.findings.disclaimer' | t }}
+    </p>
+  </div>
+</section>

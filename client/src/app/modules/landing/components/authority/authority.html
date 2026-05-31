@@ -1,0 +1,49 @@
+<section id="authority" class="authority" aria-labelledby="authority-title">
+  <div class="container">
+    <header class="section-head" appReveal="fade">
+      <p class="eyebrow">{{ 'landing.authority.eyebrow' | t }}</p>
+      <h2 id="authority-title">{{ 'landing.authority.title' | t }}</h2>
+    </header>
+
+    <div class="authority__split">
+      <article class="authority__portrait spotlight-card" appSpotlight appReveal="fade">
+        <div class="authority__portrait-frame" aria-hidden="true">
+          <div class="authority__portrait-inner">
+            <span class="authority__portrait-initials">AA</span>
+          </div>
+        </div>
+        <p class="authority__name">Prof. Antonio Annibali</p>
+        <p class="authority__role">Matematica Finanziaria · Sapienza · LUISS · Attuario</p>
+      </article>
+
+      <div class="authority__bio" appReveal="fade">
+        <p class="authority__bio-text">{{ 'landing.authority.bio' | t }}</p>
+
+        <blockquote class="pull-quote authority__quote">
+          {{ 'landing.authority.quote' | t }}
+          <span class="pull-quote__cite">{{ 'landing.authority.quoteCite' | t }}</span>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="authority__papers" appReveal="fade">
+      <h3 class="authority__papers-title">{{ 'landing.authority.papersTitle' | t }}</h3>
+      <ul class="authority__papers-list">
+        @for (paper of papers(); track $index) {
+          <li class="authority__paper">
+            <span class="authority__paper-num">{{ ($index + 1).toString().padStart(2, '0') }}</span>
+            <span class="authority__paper-title">{{ paper }}</span>
+          </li>
+        }
+      </ul>
+    </div>
+
+    <div class="authority__team" appReveal="fade">
+      <p class="eyebrow text-emerald">{{ 'landing.authority.teamEyebrow' | t }}</p>
+      <h3 class="authority__team-title">{{ 'landing.authority.teamTitle' | t }}</h3>
+      <p class="lead">{{ 'landing.authority.teamBody' | t }}</p>
+    </div>
+
+    <p class="authority__closing">{{ 'landing.authority.closing' | t }}</p>
+  </div>
+</section>

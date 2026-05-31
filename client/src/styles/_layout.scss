@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad-x);
+}
+
+.container-reading {
+  width: 100%;
+  max-width: var(--container-reading);
+  margin-inline: auto;
+  padding-inline: var(--container-pad-x);
+}
+
+section {
+  padding-block: clamp(64px, 6vw, 128px);
+  position: relative;
+}
+
+.section-pad-sm {
+  padding-block: clamp(48px, 4vw, 96px);
+}
+
+.stack > * + * {
+  margin-top: var(--sp-4);
+}
+.stack-sm > * + * {
+  margin-top: var(--sp-2);
+}
+.stack-lg > * + * {
+  margin-top: var(--sp-8);
+}
+
+.divider {
+  height: 1px;
+  background: var(--border-soft);
+  border: 0;
+}

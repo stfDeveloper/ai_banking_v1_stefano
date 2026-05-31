@@ -1,0 +1,29 @@
+<section id="pills" class="pills" aria-labelledby="pills-title">
+  <div class="container">
+    <header class="section-head" appReveal="fade">
+      <p class="eyebrow">{{ 'landing.pills.eyebrow' | t }}</p>
+      <h2 id="pills-title">{{ 'landing.pills.title' | t }}</h2>
+    </header>
+
+    <div class="pills__grid" appReveal="stagger">
+      @for (pill of items(); track pill.title; let i = $index) {
+        <article class="pill">
+          <div class="pill__thumb">
+            <span class="pill__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <polygon points="6 4 22 12 6 20 6 4" />
+              </svg>
+            </span>
+            <span class="pill__duration">{{ pill.duration }}</span>
+          </div>
+          <p class="pill__num">Pillola {{ (i + 1).toString().padStart(2, '0') }}</p>
+          <h3 class="pill__title">{{ pill.title }}</h3>
+        </article>
+      }
+    </div>
+
+    <div class="pills__cta" appReveal="fade">
+      <a class="btn-link" href="#">{{ 'landing.pills.cta' | t }}</a>
+    </div>
+  </div>
+</section>

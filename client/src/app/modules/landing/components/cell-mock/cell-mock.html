@@ -1,0 +1,85 @@
+<button
+  type="button"
+  class="cell-mock"
+  (click)="cycle()"
+  [attr.aria-label]="'landing.cell.ariaLabel' | t"
+>
+  <span class="cell-mock__notch" aria-hidden="true"></span>
+  <span class="cell-mock__screen">
+    <span class="cell-mock__statusbar">
+      <span class="cell-mock__time">{{ 'landing.cell.statusTime' | t }}</span>
+      <span class="cell-mock__signals" aria-hidden="true">
+        <svg viewBox="0 0 20 12" width="20" height="12">
+          <rect x="0" y="8" width="3" height="4" rx="0.6" fill="currentColor" />
+          <rect x="5" y="5" width="3" height="7" rx="0.6" fill="currentColor" />
+          <rect x="10" y="2" width="3" height="10" rx="0.6" fill="currentColor" />
+          <rect x="15" y="0" width="3" height="12" rx="0.6" fill="currentColor" opacity=".6" />
+        </svg>
+      </span>
+    </span>
+
+    <span class="cell-mock__appbar">
+      <span class="cell-mock__appbar-dot" aria-hidden="true"></span>
+      {{ 'landing.cell.appTitle' | t }}
+    </span>
+
+    <span class="cell-mock__body" [attr.data-state]="state()">
+      @if (state() === 'empty') {
+        <span class="cell-empty">
+          <span class="cell-empty__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="17 8 12 3 7 8" />
+              <line x1="12" y1="3" x2="12" y2="15" />
+            </svg>
+          </span>
+          <span class="cell-empty__title">{{ 'landing.cell.stepEmptyTitle' | t }}</span>
+          <span class="cell-empty__hint">{{ 'landing.cell.stepEmptyHint' | t }}</span>
+          <span class="cell-empty__cta">{{ 'landing.cell.stepEmptyCta' | t }}</span>
+        </span>
+      } @else if (state() === 'loading') {
+        <span class="cell-loading">
+          <span class="cell-loading__title">{{ 'landing.cell.stepLoadingTitle' | t }}</span>
+          <span class="cell-loading__list">
+            @for (item of loadingItems(); track $index) {
+              <span
+                class="cell-loading__item"
+                [class.is-done]="$index < loadingStep()"
+                [class.is-active]="$index === loadingStep()"
+              >
+                <span class="cell-loading__dot" aria-hidden="true"></span>
+                {{ item }}
+              </span>
+            }
+          </span>
+          <span class="cell-loading__bar" aria-hidden="true">
+            <span class="cell-loading__bar-fill"></span>
+          </span>
+        </span>
+      } @else {
+        <span class="cell-result">
+          <span class="cell-result__title">{{ 'landing.cell.stepResultTitle' | t }}</span>
+          <span class="cell-result__body">{{ 'landing.cell.stepResultBody' | t }}</span>
+          <span class="cell-result__badges">
+            @for (badge of resultBadges(); track $index) {
+              <span class="cell-result__badge">{{ badge }}</span>
+            }
+          </span>
+          <span class="cell-result__lines" aria-hidden="true">
+            <span class="cell-result__line"></span>
+            <span class="cell-result__line cell-result__line--short"></span>
+            <span class="cell-result__line"></span>
+            <span class="cell-result__line cell-result__line--med"></span>
+            <span class="cell-result__line"></span>
+          </span>
+          <span class="cell-result__cta">{{ 'landing.cell.stepResultCta' | t }}</span>
+        </span>
+      }
+    </span>
+
+    <span class="cell-mock__beam" aria-hidden="true"></span>
+  </span>
+
+  <span class="visually-hidden">{{ 'landing.cell.ariaLabel' | t }}</span>
+</button>

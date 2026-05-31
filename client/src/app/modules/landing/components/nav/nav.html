@@ -1,0 +1,54 @@
+<a class="skip-link" href="#main">{{ 'landing.nav.skipLink' | t }}</a>
+
+<header class="site-nav" [class.is-scrolled]="scrolled()" role="banner">
+  <div class="container site-nav__inner">
+    <a href="#top" class="site-nav__brand focusable" aria-label="Check-up Bancario · Home">
+      <span class="site-nav__brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+          stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 12l4 4 14-14" />
+          <path d="M3 18l4 4 14-14" opacity=".5" />
+        </svg>
+      </span>
+      <span class="site-nav__brand-text">{{ 'brand.name' | t }}</span>
+    </a>
+
+    <nav class="site-nav__links" aria-label="Sezioni principali">
+      <a class="site-nav__link focusable" href="#method">{{ 'landing.nav.method' | t }}</a>
+      <a class="site-nav__link focusable" href="#results">{{ 'landing.nav.cases' | t }}</a>
+      <a class="site-nav__link focusable" href="#authority">{{ 'landing.nav.authority' | t }}</a>
+      <a class="site-nav__link focusable" href="#flow">{{ 'landing.nav.tool' | t }}</a>
+    </nav>
+
+    <a class="btn btn-gold btn-sm site-nav__cta" appMagnetic href="#hero">
+      {{ 'landing.nav.cta' | t }}
+    </a>
+
+    <button
+      type="button"
+      class="site-nav__burger focusable"
+      [class.is-open]="mobileOpen()"
+      (click)="toggleMobile()"
+      [attr.aria-expanded]="mobileOpen()"
+      aria-label="Menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="site-nav__progress" appScrollProgress aria-hidden="true"></div>
+</header>
+
+@if (mobileOpen()) {
+  <div class="mobile-drawer" role="dialog" aria-modal="true">
+    <a class="mobile-drawer__link" href="#method" (click)="closeMobile()">{{ 'landing.nav.method' | t }}</a>
+    <a class="mobile-drawer__link" href="#results" (click)="closeMobile()">{{ 'landing.nav.cases' | t }}</a>
+    <a class="mobile-drawer__link" href="#authority" (click)="closeMobile()">{{ 'landing.nav.authority' | t }}</a>
+    <a class="mobile-drawer__link" href="#flow" (click)="closeMobile()">{{ 'landing.nav.tool' | t }}</a>
+    <a class="btn btn-gold btn-lg mobile-drawer__cta" href="#hero" (click)="closeMobile()">
+      {{ 'landing.nav.cta' | t }}
+    </a>
+  </div>
+}

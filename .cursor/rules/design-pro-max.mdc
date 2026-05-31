@@ -1,0 +1,11 @@
+---
+description: Route high-polish web design work to the UI UX Pro Max and motion design skill.
+alwaysApply: true
+---
+
+# Design Pro Max
+
+- For landing pages, dashboards, redesigns, SaaS UI, marketing pages, design systems, Framer Motion, or high-polish UI work, read `.cursor/skills/design-pro-max/SKILL.md`.
+- Start design work from product type, style, palette, typography, layout pattern, motion, accessibility, and responsive targets.
+- Prefer SVG icons over emoji, visible focus states, contrast-safe colors, and `prefers-reduced-motion`.
+- Use Framer Motion only in React/Next-compatible stacks; otherwise translate motion specs to the project animation system.

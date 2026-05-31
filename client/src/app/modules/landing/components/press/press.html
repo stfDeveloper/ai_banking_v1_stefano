@@ -1,0 +1,25 @@
+<section id="press" class="press" aria-labelledby="press-title">
+  <div class="container">
+    <header class="section-head" appReveal="fade">
+      <p class="eyebrow">{{ 'landing.press.eyebrow' | t }}</p>
+      <h2 id="press-title">{{ 'landing.press.title' | t }}</h2>
+    </header>
+
+    <div class="press__marquee" appReveal="fade">
+      <app-marquee [items]="papers()" [duration]="42" />
+    </div>
+
+    <div class="press__sentences" appReveal="fade">
+      <h3 class="press__h3">{{ 'landing.press.sentencesTitle' | t }}</h3>
+      <ul class="press__list">
+        @for (s of sentences(); track s) {
+          <li class="press__item">
+            <span class="press__item-bullet" aria-hidden="true">§</span>
+            <span class="press__item-text">{{ s }}</span>
+          </li>
+        }
+      </ul>
+      <a class="btn-link" href="#">{{ 'landing.press.cta' | t }}</a>
+    </div>
+  </div>
+</section>

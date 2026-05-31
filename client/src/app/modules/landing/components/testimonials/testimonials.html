@@ -1,0 +1,56 @@
+<section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
+  <div class="container">
+    <header class="section-head" appReveal="fade">
+      <p class="eyebrow">{{ 'landing.testimonials.eyebrow' | t }}</p>
+      <h2 id="testimonials-title">{{ 'landing.testimonials.title' | t }}</h2>
+    </header>
+
+    <div class="tst" appReveal="fade">
+      <div class="tst__stage">
+        @for (item of items(); track $index; let i = $index) {
+          <article
+            class="tst-card"
+            [class.is-active]="i === active()"
+            [attr.aria-hidden]="i !== active()"
+          >
+            <blockquote class="tst-card__quote">{{ item.quote }}</blockquote>
+            <div class="tst-card__amount">{{ item.amount }}</div>
+            <footer class="tst-card__meta">
+              <span class="tst-card__name">{{ item.name }}</span>
+              <span class="tst-card__context">{{ item.context }}</span>
+            </footer>
+          </article>
+        }
+      </div>
+
+      <div class="tst__controls">
+        <button class="tst__btn focusable" (click)="prev()" aria-label="Caso precedente">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+        <div class="tst__dots" role="tablist" aria-label="Selezione testimonianza">
+          @for (item of items(); track $index; let i = $index) {
+            <button
+              class="tst__dot focusable"
+              [class.is-active]="i === active()"
+              (click)="goTo(i)"
+              [attr.aria-label]="'Mostra testimonianza ' + (i + 1)"
+              [attr.aria-selected]="i === active()"
+              role="tab"
+            ></button>
+          }
+        </div>
+        <button class="tst__btn focusable" (click)="next()" aria-label="Caso successivo">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <p class="testimonials__closing">{{ 'landing.testimonials.closing' | t }}</p>
+  </div>
+</section>

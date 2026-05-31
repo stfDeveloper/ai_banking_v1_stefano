@@ -1,0 +1,107 @@
+.pills {
+  background: var(--bg-canvas);
+}
+
+.pills__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+  margin-top: var(--sp-12);
+}
+
+@media (min-width: 640px) {
+  .pills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pills__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.pill {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-4);
+  transition: transform var(--dur-3) var(--ease-out);
+  cursor: pointer;
+}
+
+.pill:hover {
+  transform: translateY(-2px);
+}
+
+.pill:hover .pill__play {
+  background: var(--gold-400);
+  transform: scale(1.05);
+}
+
+.pill__thumb {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #1c2535 0%, #0c121b 100%);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.pill__thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 30%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+}
+
+.pill__play {
+  position: relative;
+  z-index: 1;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(212, 162, 76, 0.85);
+  color: var(--ink-inverse);
+  display: grid;
+  place-items: center;
+  transition: background var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out);
+}
+
+.pill__duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
+  background: rgba(10, 14, 20, 0.7);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-primary);
+}
+
+.pill__num {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.15em;
+  color: var(--gold-300);
+  text-transform: uppercase;
+}
+
+.pill__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  color: var(--ink-primary);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.pills__cta {
+  margin-top: var(--sp-8);
+  text-align: center;
+}

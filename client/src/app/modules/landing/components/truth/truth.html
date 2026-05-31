@@ -1,0 +1,23 @@
+<section id="truth" class="truth" aria-labelledby="truth-title">
+  <div class="container">
+    <header class="section-head" appReveal="fade">
+      <p class="eyebrow">{{ 'landing.truth.eyebrow' | t }}</p>
+      <h2 id="truth-title">{{ 'landing.truth.title' | t }}</h2>
+      <p class="lead">{{ 'landing.truth.lead' | t }}</p>
+    </header>
+
+    <ul class="truth__kpis" appReveal="stagger">
+      @for (kpi of kpis(); track kpi.label) {
+        <li class="kpi">
+          <span class="kpi__value">{{ kpi.value }}</span>
+          <span class="kpi__label">{{ kpi.label }}</span>
+        </li>
+      }
+    </ul>
+
+    <div class="truth__paragraphs" appReveal="fade">
+      <p>{{ 'landing.truth.p1' | t }}</p>
+      <p>{{ 'landing.truth.p2' | t }}</p>
+    </div>
+  </div>
+</section>
