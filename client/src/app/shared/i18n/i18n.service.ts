@@ -16,7 +16,7 @@ export class I18nService {
   private readonly currentLocale = signal<string>('it');
 
   load(locale: string): Observable<TranslationDict> {
-    return this.http.get<TranslationDict>(`/assets/i18n/${locale}.json`).pipe(
+    return this.http.get<TranslationDict>(`assets/i18n/${locale}.json`).pipe(
       tap((data) => {
         this.dict.set(data);
         this.currentLocale.set(locale);
