@@ -1,0 +1,46 @@
+@if (eyebrow || title || lead) {
+  <header class="section-head" appReveal="fade">
+    @if (eyebrow) {
+      <p class="eyebrow text-accent">{{ eyebrow }}</p>
+    }
+    @if (title) {
+      <h2>{{ title }}</h2>
+    }
+    @if (lead) {
+      <p class="lead" style="margin-top: var(--sp-3); max-width: 56ch;">{{ lead }}</p>
+    }
+  </header>
+}
+
+<ul class="outcomes-grid" appReveal="stagger">
+  @for (item of items; track item.title) {
+    <li class="outcome">
+      <span class="outcome__icon" aria-hidden="true">
+        @switch (item.icon) {
+          @case ('trending-down') {
+            <svg lucideTrendingDown [size]="20" strokeWidth="2.4"></svg>
+          }
+          @case ('shield') {
+            <svg lucideShield [size]="20" strokeWidth="2.4"></svg>
+          }
+          @case ('hand-coins') {
+            <svg lucideHandCoins [size]="20" strokeWidth="2.4"></svg>
+          }
+          @case ('calendar') {
+            <svg lucideCalendar [size]="20" strokeWidth="2.4"></svg>
+          }
+          @case ('check-circle') {
+            <svg lucideCheckCircle [size]="20" strokeWidth="2.4"></svg>
+          }
+          @default {
+            <svg lucideCheckCircle [size]="20" strokeWidth="2.4"></svg>
+          }
+        }
+      </span>
+      <div>
+        <p class="outcome__title">{{ item.title }}</p>
+        <p class="outcome__body">{{ item.body }}</p>
+      </div>
+    </li>
+  }
+</ul>

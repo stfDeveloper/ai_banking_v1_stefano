@@ -1,0 +1,48 @@
+/* Site section rhythm — anti-monotony backgrounds & accents */
+
+.site-section {
+  padding-block: clamp(48px, 7vw, 96px);
+}
+
+.site-section--deep {
+  background: var(--bg-deep);
+}
+
+.site-section--canvas {
+  background: var(--bg-canvas);
+  border-block: 1px solid var(--border-soft);
+}
+
+.site-section--panel {
+  background: linear-gradient(180deg, var(--bg-panel) 0%, var(--bg-deep) 100%);
+}
+
+.site-section--gradient {
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(212, 162, 76, 0.06) 0%, transparent 70%),
+    var(--bg-deep);
+}
+
+/* Page accent tokens via data-accent on hero or page wrapper */
+[data-accent='gold'] {
+  --page-accent: var(--gold-300);
+  --page-accent-muted: var(--gold-500);
+}
+
+[data-accent='navy'] {
+  --page-accent: var(--navy-300);
+  --page-accent-muted: var(--navy-500);
+}
+
+[data-accent='emerald'] {
+  --page-accent: var(--emerald-300);
+  --page-accent-muted: var(--emerald-500);
+}
+
+[data-accent='coral'] {
+  --page-accent: var(--coral-400);
+  --page-accent-muted: var(--coral-500);
+}
+
+.text-accent {
+  color: var(--page-accent, var(--gold-300));
+}

@@ -1,0 +1,228 @@
+/* ---------- Hero ---------- */
+.home-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-block: clamp(64px, 9vw, 140px);
+}
+
+.home-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--sp-5);
+}
+
+.home-hero__eyebrow {
+  color: var(--gold-300);
+}
+
+.home-hero__title {
+  font-size: clamp(2.75rem, 1.6rem + 5vw, 5rem);
+  line-height: 1.02;
+  max-width: 18ch;
+}
+
+.home-hero__lead {
+  font-size: var(--fs-lg);
+  max-width: 56ch;
+}
+
+.home-hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-3);
+  margin-top: var(--sp-2);
+}
+
+.home-hero__stats {
+  width: 100%;
+  max-width: 880px;
+  margin-top: var(--sp-8);
+}
+
+.home-hero__micro {
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+  margin-top: var(--sp-2);
+}
+
+.home-faq {
+  max-width: 720px;
+  margin-inline: auto;
+  display: grid;
+  gap: var(--sp-3);
+}
+
+.home-faq__more {
+  text-align: center;
+  margin-top: var(--sp-5);
+
+  a {
+    color: var(--gold-300);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.home-sos {
+  margin-top: var(--sp-8);
+}
+
+.home-bridge {
+  max-width: 60ch;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.home-bridge__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.5rem);
+  line-height: 1.15;
+  margin-block: var(--sp-3) var(--sp-4);
+}
+
+.home-bridge__body {
+  color: var(--ink-secondary);
+}
+
+.home-diagnosis__inner {
+  max-width: 920px;
+  margin-inline: auto;
+}
+
+/* ---------- Perché noi ---------- */
+.home-why {
+  background: var(--bg-canvas);
+  border-block: 1px solid var(--border-soft);
+}
+
+.home-why__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+}
+
+@media (max-width: 880px) {
+  .home-why__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.perk {
+  display: flex;
+  gap: var(--sp-4);
+  align-items: flex-start;
+  padding: var(--sp-5);
+  border-radius: var(--radius-md);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+}
+
+.perk__check {
+  flex-shrink: 0;
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(46, 196, 182, 0.12);
+  color: var(--emerald-400);
+  border: 1px solid rgba(46, 196, 182, 0.3);
+}
+
+.perk__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  color: var(--ink-primary);
+}
+
+.perk__body {
+  font-size: var(--fs-sm);
+  color: var(--ink-secondary);
+}
+
+/* ---------- Voci ---------- */
+.home-voices {
+  background: var(--bg-canvas);
+  border-block: 1px solid var(--border-soft);
+}
+
+.home-voices__note {
+  margin-top: var(--sp-6);
+  text-align: center;
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+}
+
+/* ---------- SOS banner ---------- */
+.home-sos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-8);
+  align-items: center;
+  padding: clamp(var(--sp-8), 4vw, var(--sp-12));
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(122, 36, 36, 0.18), var(--bg-panel) 60%);
+  border: 1px solid rgba(228, 88, 88, 0.25);
+}
+
+@media (max-width: 880px) {
+  .home-sos {
+    grid-template-columns: 1fr;
+    gap: var(--sp-6);
+  }
+}
+
+.home-sos__copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.home-sos__title {
+  font-size: clamp(1.75rem, 1.2rem + 2vw, 2.75rem);
+  line-height: 1.1;
+}
+
+.home-sos__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.home-sos__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding: var(--sp-4) var(--sp-5);
+  border-radius: var(--radius-md);
+  background: var(--bg-deep);
+  border: 1px solid var(--border-soft);
+  text-decoration: none;
+  transition: border-color var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out);
+}
+
+.home-sos__item:hover {
+  border-color: rgba(228, 88, 88, 0.4);
+  transform: translateX(3px);
+  text-decoration: none;
+}
+
+.home-sos__item-label {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  color: var(--ink-primary);
+}

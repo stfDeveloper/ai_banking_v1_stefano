@@ -1,0 +1,20 @@
+<div class="bento" appReveal="stagger">
+  @for (cell of cells; track cell.path) {
+    <a
+      class="bento__cell"
+      [class.bento__cell--lg]="cell.size === 'lg'"
+      [routerLink]="cell.path"
+      appSpotlight
+    >
+      <span class="bento__beam" aria-hidden="true"></span>
+      <span class="bento__arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" />
+        </svg>
+      </span>
+      <h3 class="bento__title">{{ cell.title }}</h3>
+      <p class="bento__hint">{{ cell.hint }}</p>
+    </a>
+  }
+</div>

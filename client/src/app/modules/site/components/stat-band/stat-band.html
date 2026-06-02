@@ -1,0 +1,14 @@
+<ul class="stat-band" appReveal="stagger">
+  @for (item of items; track item.label) {
+    <li class="stat-band__item">
+      <span
+        class="stat-band__value tnum"
+        [appCountUp]="item.value"
+        [prefix]="item.prefix || ''"
+        [suffix]="item.suffix || ''"
+        >{{ item.prefix || '' }}{{ item.value }}{{ item.suffix || '' }}</span
+      >
+      <span class="stat-band__label">{{ item.label }}</span>
+    </li>
+  }
+</ul>

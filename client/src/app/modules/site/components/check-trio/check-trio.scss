@@ -1,0 +1,49 @@
+.check-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-4);
+}
+
+@media (max-width: 880px) {
+  .check-trio {
+    grid-template-columns: 1fr;
+  }
+}
+
+.check-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding: var(--sp-6);
+  border-radius: var(--radius-lg);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--elev-1);
+}
+
+.check-card__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: rgba(212, 162, 76, 0.1);
+  color: var(--gold-300);
+  border: 1px solid var(--border-gold);
+}
+
+.check-card__title {
+  font-size: var(--fs-2xl);
+  line-height: 1.2;
+  color: var(--ink-primary);
+}
+
+.check-card__oneliner {
+  font-size: var(--fs-lg);
+  color: var(--ink-secondary);
+  flex: 1;
+}
+
+.check-card app-disclosure {
+  margin-top: var(--sp-1);
+}

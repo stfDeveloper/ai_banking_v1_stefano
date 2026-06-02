@@ -1,0 +1,83 @@
+@if (page(); as p) {
+  <div data-accent="coral">
+    <app-page-hero [content]="p.hero" [deadline]="p.deadline" [urgent]="true" accent="coral" />
+
+    <!-- Stakes FIRST -->
+    <section class="site-section site-section--canvas" aria-labelledby="sos-stakes-title">
+      <div class="container">
+        <app-stakes [content]="p.stakes" />
+      </div>
+    </section>
+
+    <!-- Story timeline scadenza -->
+    <section class="site-section site-section--deep" aria-labelledby="sos-timeline-title">
+      <div class="container">
+        <app-story-timeline
+          [eyebrow]="p.stakes.eyebrow"
+          [title]="p.deadline"
+          [chapters]="p.timeline"
+        />
+      </div>
+    </section>
+
+    <!-- Hook + dettaglio -->
+    <section class="site-section site-section--panel" aria-labelledby="sos-intro-title">
+      <div class="container">
+        <div class="sos-intro" appReveal="fade">
+          <h2 id="sos-intro-title" class="sos-intro__hook">{{ p.intro.hook }}</h2>
+          <app-disclosure>
+            <p>{{ p.intro.detail }}</p>
+          </app-disclosure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verifiche -->
+    <section class="site-section site-section--canvas" aria-labelledby="sos-checks-title">
+      <div class="container">
+        <header class="section-head section-head--center" appReveal="fade">
+          <p class="eyebrow text-coral">{{ 'site.common.verificheEyebrow' | t }}</p>
+          <h2 id="sos-checks-title">{{ 'site.common.verificheTitle' | t }}</h2>
+        </header>
+        <app-check-trio [items]="verifiche" />
+      </div>
+    </section>
+
+    <!-- Origine del credito -->
+    <section class="site-section site-section--deep" aria-labelledby="sos-origine-title">
+      <div class="container">
+        <header class="section-head" appReveal="fade">
+          <h2 id="sos-origine-title">{{ p.origine.title }}</h2>
+        </header>
+        <ul class="chips" appReveal="stagger">
+          @for (item of p.origine.items; track item) {
+            <li class="chip">{{ item }}</li>
+          }
+        </ul>
+      </div>
+    </section>
+
+    <!-- SOS stepper -->
+    <section class="site-section site-section--panel sos-flow" aria-labelledby="sos-flow-title">
+      <div class="container">
+        <header class="section-head section-head--center" appReveal="fade">
+          <p class="eyebrow">{{ 'site.shared.sosStepper.eyebrow' | t }}</p>
+          <h2 id="sos-flow-title">{{ 'site.shared.sosStepper.title' | t }}</h2>
+        </header>
+        <app-stepper [steps]="sosSteps" />
+      </div>
+    </section>
+
+    <!-- Authority -->
+    <section class="site-section site-section--canvas">
+      <div class="container">
+        <app-authority-band [content]="authority" />
+      </div>
+    </section>
+
+    <!-- CTA urgente -->
+    <section class="site-section container" aria-label="Contattaci subito">
+      <app-contact-cta variant="urgent" />
+    </section>
+  </div>
+}

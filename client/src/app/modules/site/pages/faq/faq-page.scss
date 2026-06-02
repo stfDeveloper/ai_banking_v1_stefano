@@ -1,0 +1,26 @@
+.faq-list {
+  max-width: var(--container-reading);
+  margin-inline: auto;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.faq-micro {
+  text-align: center;
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+.faq-micro__title {
+  font-size: clamp(1.35rem, 1rem + 1.2vw, 2rem);
+  margin-bottom: var(--sp-3);
+}
+
+.faq-micro__lead {
+  margin-bottom: var(--sp-5);
+}
+
+.faq-micro__hint {
+  margin-top: var(--sp-4);
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+}

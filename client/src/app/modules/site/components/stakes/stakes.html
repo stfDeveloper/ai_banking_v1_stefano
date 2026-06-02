@@ -1,0 +1,23 @@
+<div class="stakes" appReveal="fade">
+  <header class="stakes__head">
+    <p class="eyebrow">{{ content.eyebrow }}</p>
+    <h2 class="stakes__title">{{ content.title }}</h2>
+  </header>
+
+  <ul class="stakes__list">
+    @for (item of content.items; track item.title) {
+      <li class="stakes__item">
+        <span class="stakes__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" />
+          </svg>
+        </span>
+        <div>
+          <h3 class="stakes__item-title">{{ item.title }}</h3>
+          <p class="stakes__item-body">{{ item.body }}</p>
+        </div>
+      </li>
+    }
+  </ul>
+</div>

@@ -1,0 +1,27 @@
+.authority-band {
+  text-align: center;
+}
+
+.authority-band__norms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-3);
+  margin-block: var(--sp-6);
+}
+
+.tag-norm {
+  display: inline-block;
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--navy-300);
+  background: rgba(78, 116, 204, 0.12);
+  border: 1px solid rgba(78, 116, 204, 0.25);
+}
+
+.authority-band__marquee {
+  margin-top: var(--sp-5);
+  opacity: 0.75;
+}

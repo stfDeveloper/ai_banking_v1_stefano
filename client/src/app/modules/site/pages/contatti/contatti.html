@@ -1,0 +1,140 @@
+<app-page-hero [content]="hero" [showCta]="false" />
+
+<p class="container contatti-reassurance" appReveal="fade">{{ 'site.contatti.reassurance' | t }}</p>
+
+<!-- Canali di contatto -->
+<section class="site-section site-section--canvas" aria-label="Canali di contatto">
+  <div class="container">
+  <div class="channels" appReveal="stagger">
+    <a class="channel channel--gold focusable" [href]="tel()">
+      <span class="channel__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+      </span>
+      <span class="channel__label">{{ 'site.contatti.channels.verdeLabel' | t }}</span>
+      <span class="channel__value">{{ 'site.contact.numeroVerde' | t }}</span>
+      <span class="channel__hint">{{ 'site.contatti.channels.verdeHint' | t }}</span>
+    </a>
+
+    <a class="channel channel--emerald focusable" [href]="whatsapp()" target="_blank" rel="noopener">
+      <span class="channel__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M12.04 2a9.93 9.93 0 0 0-8.46 15.17L2 22l4.95-1.3A9.93 9.93 0 1 0 12.04 2zm0 1.86a8.06 8.06 0 0 1 6.84 12.33l-.2.32.78 2.85-2.93-.77-.31.18a8.06 8.06 0 1 1-4.18-15.13zm-3.2 4.2c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.34.99 2.5c.12.16 1.71 2.6 4.15 3.55 2.03.8 2.44.64 2.88.6.44-.04 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.64-1.19-1.42-1.33-1.66-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46z" />
+        </svg>
+      </span>
+      <span class="channel__label">{{ 'site.contatti.channels.whatsappLabel' | t }}</span>
+      <span class="channel__value">{{ 'site.contact.whatsapp' | t }}</span>
+      <span class="channel__hint">{{ 'site.contatti.channels.whatsappHint' | t }}</span>
+    </a>
+
+    <a class="channel focusable" [href]="mailto()">
+      <span class="channel__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-10 6L2 7" />
+        </svg>
+      </span>
+      <span class="channel__label">{{ 'site.contatti.channels.emailLabel' | t }}</span>
+      <span class="channel__value">{{ 'site.contact.email' | t }}</span>
+      <span class="channel__hint">{{ 'site.contatti.channels.emailHint' | t }}</span>
+    </a>
+
+    <div class="channel channel--static">
+      <span class="channel__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
+        </svg>
+      </span>
+      <span class="channel__label">{{ 'site.contatti.channels.sedeLabel' | t }}</span>
+      <span class="channel__value channel__value--sm">{{ 'site.contact.sede' | t }}</span>
+      <span class="channel__hint">{{ 'site.contatti.channels.sedeHint' | t }}</span>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="site-section site-section--panel" aria-label="Autodiagnosi">
+  <div class="container">
+    <p class="section-head section-head--center lead">{{ 'site.contatti.diagnosisIntro' | t }}</p>
+    <app-self-diagnosis />
+  </div>
+</section>
+
+<!-- Come richiedere -->
+<section class="site-section site-section--deep contatti-flow" aria-labelledby="contatti-flow-title">
+  <div class="container">
+    <header class="section-head section-head--center" appReveal="fade">
+      <p class="eyebrow">{{ 'site.contatti.stepper.eyebrow' | t }}</p>
+      <h2 id="contatti-flow-title">{{ 'site.contatti.stepper.title' | t }}</h2>
+    </header>
+    <app-stepper [steps]="steps" />
+  </div>
+</section>
+
+<!-- Modulo -->
+<section class="site-section site-section--canvas container" aria-labelledby="contatti-form-title">
+  <div class="form-card" appReveal="fade">
+    <header class="section-head">
+      <h2 id="contatti-form-title">{{ 'site.contatti.form.title' | t }}</h2>
+      <p class="lead">{{ 'site.contatti.form.subtitle' | t }}</p>
+    </header>
+
+    @if (sent()) {
+      <p class="form-card__sent" role="status">
+        {{ 'site.cta.microcopy' | t }}
+      </p>
+    }
+
+    <form class="form" (ngSubmit)="submit()" #f="ngForm" novalidate>
+      <div class="field">
+        <label class="field__label" for="cf-name">{{ 'site.contatti.form.name' | t }} *</label>
+        <input class="field__input" id="cf-name" name="name" type="text" required
+          [(ngModel)]="model.name" autocomplete="name" />
+      </div>
+
+      <div class="form__row">
+        <div class="field">
+          <label class="field__label" for="cf-phone">{{ 'site.contatti.form.phone' | t }} *</label>
+          <input class="field__input" id="cf-phone" name="phone" type="tel" required
+            [(ngModel)]="model.phone" autocomplete="tel" inputmode="tel" />
+        </div>
+        <div class="field">
+          <label class="field__label" for="cf-email">{{ 'site.contatti.form.email' | t }} *</label>
+          <input class="field__input" id="cf-email" name="email" type="email" required
+            [(ngModel)]="model.email" autocomplete="email" inputmode="email" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="cf-type">{{ 'site.contatti.form.type' | t }} *</label>
+        <select class="field__input" id="cf-type" name="type" required [(ngModel)]="model.type">
+          <option value="" disabled selected>{{ 'site.contatti.form.typePlaceholder' | t }}</option>
+          @for (opt of typeOptions; track opt) {
+            <option [value]="opt">{{ opt }}</option>
+          }
+        </select>
+      </div>
+
+      <label class="consent">
+        <input type="checkbox" name="consentPrivacy" [(ngModel)]="model.consentPrivacy" required />
+        <span>{{ 'site.contatti.form.consentPrivacy' | t }}</span>
+      </label>
+
+      <label class="consent">
+        <input type="checkbox" name="consentData" [(ngModel)]="model.consentData" required />
+        <span>{{ 'site.contatti.form.consentData' | t }}</span>
+      </label>
+
+      <button type="submit" class="btn btn-gold btn-lg form__submit"
+        [disabled]="f.invalid || !model.consentPrivacy || !model.consentData">
+        {{ 'site.contatti.form.submit' | t }}
+      </button>
+
+      <p class="form__or">{{ 'site.contatti.form.orCall' | t }}</p>
+      <a class="form__call focusable" [href]="tel()">{{ 'site.contact.numeroVerde' | t }}</a>
+    </form>
+  </div>
+</section>

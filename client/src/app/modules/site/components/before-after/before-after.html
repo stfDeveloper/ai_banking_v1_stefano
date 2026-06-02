@@ -1,0 +1,24 @@
+<div class="before-after" appReveal="fade">
+  <header class="before-after__head">
+    <p class="eyebrow text-accent">{{ content.eyebrow }}</p>
+    <h2 class="before-after__title">{{ content.title }}</h2>
+  </header>
+
+  <div class="before-after__ledger" role="table" aria-label="{{ content.title }}">
+    <div class="before-after__row before-after__row--header" role="row">
+      <span class="before-after__cell before-after__cell--label" role="columnheader"></span>
+      <span class="before-after__cell" role="columnheader">{{ content.beforeLabel }}</span>
+      <span class="before-after__cell before-after__cell--after" role="columnheader">{{ content.afterLabel }}</span>
+    </div>
+    @for (row of content.rows; track row.label) {
+      <div class="before-after__row" role="row">
+        <span class="before-after__cell before-after__cell--label" role="rowheader">{{ row.label }}</span>
+        <span class="before-after__cell before-after__cell--before tnum" role="cell">{{ row.before }}</span>
+        <span class="before-after__cell before-after__cell--after tnum" role="cell">
+          {{ row.after }}
+          <span class="before-after__bar" aria-hidden="true"></span>
+        </span>
+      </div>
+    }
+  </div>
+</div>

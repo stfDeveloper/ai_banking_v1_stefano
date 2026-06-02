@@ -1,0 +1,10 @@
+<div class="tst-grid" appReveal="stagger">
+  @for (item of items; track item.who) {
+    <figure class="tst">
+      <span class="tst__mark" aria-hidden="true">&ldquo;</span>
+      <blockquote class="tst__quote">{{ item.quote }}</blockquote>
+      <p class="tst__amount tnum">{{ item.amount }}</p>
+      <figcaption class="tst__who">{{ item.who }}</figcaption>
+    </figure>
+  }
+</div>

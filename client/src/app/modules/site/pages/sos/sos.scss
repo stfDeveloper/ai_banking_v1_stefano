@@ -1,0 +1,42 @@
+.chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-default);
+  color: var(--ink-primary);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+.sos-intro {
+  max-width: var(--container-reading);
+  margin-inline: auto;
+  padding: clamp(var(--sp-6), 3vw, var(--sp-10));
+  border-radius: var(--radius-xl);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+  border-left: 3px solid var(--coral-400);
+}
+
+.sos-intro__hook {
+  font-size: clamp(1.5rem, 1rem + 2vw, 2.25rem);
+  line-height: 1.25;
+  color: var(--ink-primary);
+  margin-bottom: var(--sp-2);
+}
+
+.sos-flow {
+  background: var(--bg-canvas);
+  border-block: 1px solid var(--border-soft);
+}

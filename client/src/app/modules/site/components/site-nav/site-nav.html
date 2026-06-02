@@ -1,0 +1,141 @@
+<a class="skip-link" href="#main">{{ 'landing.nav.skipLink' | t }}</a>
+
+<header class="site-nav" [class.is-scrolled]="scrolled()" role="banner">
+  <div class="container site-nav__inner">
+    <a routerLink="/" class="site-nav__brand focusable" [attr.aria-label]="'site.nav.brandAria' | t">
+      <span class="site-nav__brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+          stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 12l4 4 14-14" />
+          <path d="M3 18l4 4 14-14" opacity=".5" />
+        </svg>
+      </span>
+      <span class="site-nav__brand-text">{{ 'brand.name' | t }}</span>
+    </a>
+
+    <nav class="site-nav__links" [attr.aria-label]="'site.nav.menuAria' | t">
+      <a class="site-nav__link focusable" routerLink="/" routerLinkActive="is-active"
+        [routerLinkActiveOptions]="{ exact: true }">{{ 'site.nav.home' | t }}</a>
+
+      <div class="nav-drop" [class.is-open]="openGroup() === 'servizi'">
+        <button type="button" class="site-nav__link nav-drop__btn focusable"
+          (click)="toggleGroup('servizi')" [attr.aria-expanded]="openGroup() === 'servizi'">
+          {{ servizi().label }}
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+        <div class="nav-drop__menu">
+          @for (item of servizi().items; track item.path) {
+            <a class="nav-drop__item focusable" [routerLink]="item.path" routerLinkActive="is-active">{{ item.label }}</a>
+          }
+        </div>
+      </div>
+
+      <div class="nav-drop" [class.is-open]="openGroup() === 'controversie'">
+        <button type="button" class="site-nav__link nav-drop__btn focusable"
+          (click)="toggleGroup('controversie')" [attr.aria-expanded]="openGroup() === 'controversie'">
+          {{ controversie().label }}
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+        <div class="nav-drop__menu">
+          @for (item of controversie().items; track item.path) {
+            <a class="nav-drop__item focusable" [routerLink]="item.path" routerLinkActive="is-active">{{ item.label }}</a>
+          }
+        </div>
+      </div>
+
+      <a class="site-nav__link focusable" routerLink="/chi-siamo" routerLinkActive="is-active">{{ 'site.nav.chiSiamo' | t }}</a>
+      <a class="site-nav__link focusable" routerLink="/faq" routerLinkActive="is-active">{{ 'site.nav.faq' | t }}</a>
+      <a class="site-nav__link focusable" routerLink="/contatti" routerLinkActive="is-active">{{ 'site.nav.contatti' | t }}</a>
+    </nav>
+
+    <div class="site-nav__contact">
+      <a class="site-nav__phone focusable" [href]="tel()">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        <span class="site-nav__phone-num">{{ numeroVerde() }}</span>
+      </a>
+      <a class="btn btn-gold btn-sm site-nav__cta" appMagnetic routerLink="/contatti">
+        {{ 'site.nav.ctaVerifica' | t }}
+      </a>
+    </div>
+
+    <button type="button" class="site-nav__burger focusable" [class.is-open]="mobileOpen()"
+      (click)="toggleMobile()" [attr.aria-expanded]="mobileOpen()" [attr.aria-label]="'site.common.openMenu' | t">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="site-nav__progress" appScrollProgress aria-hidden="true"></div>
+</header>
+
+@if (mobileOpen()) {
+  <div class="mobile-drawer" role="dialog" aria-modal="true">
+    <a class="mobile-drawer__link" routerLink="/">{{ 'site.nav.home' | t }}</a>
+
+    <div class="mobile-acc" [class.is-open]="openGroup() === 'servizi'">
+      <button type="button" class="mobile-acc__btn focusable" (click)="toggleGroup('servizi')"
+        [attr.aria-expanded]="openGroup() === 'servizi'">
+        {{ servizi().label }}
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </button>
+      @if (openGroup() === 'servizi') {
+        <div class="mobile-acc__menu">
+          @for (item of servizi().items; track item.path) {
+            <a class="mobile-acc__item focusable" [routerLink]="item.path">{{ item.label }}</a>
+          }
+        </div>
+      }
+    </div>
+
+    <div class="mobile-acc" [class.is-open]="openGroup() === 'controversie'">
+      <button type="button" class="mobile-acc__btn focusable" (click)="toggleGroup('controversie')"
+        [attr.aria-expanded]="openGroup() === 'controversie'">
+        {{ controversie().label }}
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </button>
+      @if (openGroup() === 'controversie') {
+        <div class="mobile-acc__menu">
+          @for (item of controversie().items; track item.path) {
+            <a class="mobile-acc__item focusable" [routerLink]="item.path">{{ item.label }}</a>
+          }
+        </div>
+      }
+    </div>
+
+    <a class="mobile-drawer__link" routerLink="/chi-siamo">{{ 'site.nav.chiSiamo' | t }}</a>
+    <a class="mobile-drawer__link" routerLink="/faq">{{ 'site.nav.faq' | t }}</a>
+    <a class="mobile-drawer__link" routerLink="/contatti">{{ 'site.nav.contatti' | t }}</a>
+
+    <a class="btn btn-gold btn-lg mobile-drawer__cta" routerLink="/contatti">{{ 'site.nav.ctaVerifica' | t }}</a>
+  </div>
+}
+
+<div class="mobile-bar" aria-label="Contatti rapidi">
+  <a class="mobile-bar__btn mobile-bar__btn--call" [href]="tel()">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+    </svg>
+    {{ 'site.common.callNow' | t }}
+  </a>
+  <a class="mobile-bar__btn mobile-bar__btn--wa" [href]="whatsapp()" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+      <path d="M12.04 2a9.93 9.93 0 0 0-8.46 15.17L2 22l4.95-1.3A9.93 9.93 0 1 0 12.04 2zm0 1.86a8.06 8.06 0 0 1 6.84 12.33l-.2.32.78 2.85-2.93-.77-.31.18a8.06 8.06 0 1 1-4.18-15.13zm-3.2 4.2c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.34.99 2.5c.12.16 1.71 2.6 4.15 3.55 2.03.8 2.44.64 2.88.6.44-.04 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.64-1.19-1.42-1.33-1.66-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46z" />
+    </svg>
+    WhatsApp
+  </a>
+</div>

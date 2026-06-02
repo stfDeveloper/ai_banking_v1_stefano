@@ -286,7 +286,7 @@
           "cta": "Spiegaci il caso"
         }
       ],
-      "helpLine": "Numero verde 800 141359 — risponde una persona vera, non un bot.",
+      "helpLine": "Numero verde 800 141359 — risposta diretta, senza bot.",
       "disclaimer": "Il primo contatto è gratuito e non costituisce mandato professionale: serve solo a capire se possiamo aiutarti.",
       "bridge": "Sentiamo chi ci è già passato."
     },
@@ -362,7 +362,7 @@
     "faq": {
       "eyebrow": "Domande &amp; risposte",
       "title": "Domande oneste, risposte oneste.",
-      "lead": "Se hai una domanda diversa, scrivici. Risponde una persona vera.",
+      "lead": "Se hai una domanda diversa, scrivici. Ti rispondiamo al più presto.",
       "items": [
         {
           "q": "Funziona davvero su qualsiasi mutuo?",
@@ -466,7 +466,7 @@
       "contact": {
         "title": "Contatti",
         "phone": "800 141 359",
-        "phoneLabel": "Numero verde · risponde una persona vera",
+        "phoneLabel": "Numero verde",
         "email": "info@checkupbancario.it"
       },
       "bottom": "© 2026 Check-up Bancario. Tutti i diritti riservati. P.IVA da definire."
@@ -497,6 +497,838 @@
     },
     "gdpr": {
       "upload": "Caricando il file accetti l'informativa privacy. Il PDF viene cifrato in transito e a riposo, è visibile solo al nostro team di analisi e viene conservato il tempo strettamente necessario all'analisi."
+    }
+  },
+  "site": {
+    "contact": {
+      "numeroVerde": "800 141 359",
+      "whatsapp": "338 228 8371",
+      "email": "checkupbancario@gmail.com",
+      "sede": "Piazza San Giorgio 2, 20123 Milano",
+      "whatsappUrl": "https://wa.me/393382288371",
+      "telVerde": "tel:800141359",
+      "telDiretto": "tel:+393382288371",
+      "mailto": "mailto:checkupbancario@gmail.com"
+    },
+    "common": {
+      "approfondisci": "Approfondisci",
+      "verificheTitle": "Cosa verifichiamo",
+      "verificheEyebrow": "Verifiche tecniche",
+      "checksEyebrow": "Cosa controlliamo",
+      "checksTitle": "Tre verifiche. Una sola domanda: è corretto?",
+      "estintoEyebrow": "Ancora in tempo",
+      "homeLabel": "Home",
+      "callNow": "Chiamaci",
+      "openMenu": "Apri menu",
+      "closeMenu": "Chiudi menu"
+    },
+    "nav": {
+      "brandAria": "Check-up Bancario · Home",
+      "home": "Home",
+      "chiSiamo": "Chi siamo",
+      "faq": "FAQ",
+      "contatti": "Contatti",
+      "ctaVerifica": "Richiedi la verifica gratuita",
+      "menuAria": "Menu principale",
+      "groups": {
+        "servizi": {
+          "label": "Servizi",
+          "items": [
+            { "label": "Mutui", "path": "/servizi/mutui" },
+            { "label": "Conti correnti", "path": "/servizi/conti-correnti" },
+            { "label": "Leasing", "path": "/servizi/leasing" },
+            { "label": "Finanziamenti rateali", "path": "/servizi/finanziamenti-rateali" }
+          ]
+        },
+        "controversie": {
+          "label": "Controversie",
+          "items": [
+            { "label": "SOS Decreto ingiuntivo", "path": "/controversie/decreto-ingiuntivo" },
+            { "label": "SOS Precetto", "path": "/controversie/precetto" },
+            { "label": "SOS Recupero crediti", "path": "/controversie/recupero-crediti" }
+          ]
+        }
+      }
+    },
+    "cta": {
+      "chiama": "Chiamaci ora",
+      "whatsapp": "Scrivici su WhatsApp",
+      "verifica": "Richiedi la verifica gratuita",
+      "microcopy": "Gratis. Nessun impegno.",
+      "title": "Parliamo del tuo caso",
+      "subtitle": "Ogni situazione è diversa. La prima valutazione della documentazione è gratuita.",
+      "urgentTitle": "Non aspettare. Il tempo gioca contro di te.",
+      "urgentSubtitle": "Prima ci senti, più margine hai per difenderti."
+    },
+    "shared": {
+      "checks": [
+        {
+          "title": "Anatocismo",
+          "oneLiner": "Interessi calcolati sugli interessi.",
+          "detail": "Quando gli interessi vengono caricati su altri interessi, il costo del rapporto cresce in un modo che spesso resta invisibile. È una delle voci più frequenti e più pesanti da verificare."
+        },
+        {
+          "title": "Usura",
+          "oneLiner": "Il costo del credito oltre la soglia di legge.",
+          "detail": "Se interessi, spese, commissioni e oneri superano la soglia antiusura, gli interessi possono risultare non dovuti, quelli già pagati imputati a capitale e il residuo rideterminato secondo legge."
+        },
+        {
+          "title": "Indeterminatezza",
+          "oneLiner": "Condizioni non chiare o non determinabili.",
+          "detail": "Se il contratto non permette di individuare con certezza il tasso e le condizioni, il rapporto può essere ricalcolato applicando il tasso sostitutivo previsto dalla legge, spesso identificato nel tasso BOT."
+        }
+      ],
+      "creditoCheck": {
+        "title": "Corretta determinazione del credito",
+        "oneLiner": "La cifra richiesta regge ai conti?",
+        "detail": "Ogni richiesta di pagamento deve basarsi su conteggi corretti e verificabili. L'analisi tecnica del rapporto dice se l'importo è davvero dovuto, e in quale misura."
+      },
+      "stat": [
+        { "value": 20, "suffix": "+", "label": "anni di esperienza" },
+        { "value": 90, "prefix": "oltre ", "suffix": "%", "label": "esiti favorevoli" },
+        { "value": 1000000, "prefix": "€ ", "suffix": "+", "label": "recuperato per i clienti" }
+      ],
+      "stepper": {
+        "eyebrow": "Come funziona",
+        "title": "Quattro passi. Zero impegno.",
+        "steps": [
+          { "num": "01", "title": "Contattaci", "body": "Numero verde o WhatsApp, quando preferisci." },
+          { "num": "02", "title": "Invia i documenti", "body": "Ti indichiamo esattamente quali servono." },
+          { "num": "03", "title": "Analisi gratuita", "body": "Verifichiamo se ci sono anomalie rilevanti." },
+          { "num": "04", "title": "Strategia chiara", "body": "Situazione, opportunità, costi e tempi." }
+        ]
+      },
+      "sosStepper": {
+        "eyebrow": "Assistenza",
+        "title": "Reagiamo subito.",
+        "steps": [
+          { "num": "01", "title": "Contatto immediato", "body": "Chiamaci lo stesso giorno della notifica." },
+          { "num": "02", "title": "Invia i documenti", "body": "L'atto ricevuto e il contratto da cui nasce il credito." },
+          { "num": "03", "title": "Analisi preliminare", "body": "Verifichiamo le somme e individuiamo i margini." },
+          { "num": "04", "title": "Coordinamento", "body": "Coordiniamo le attività tecniche e legali utili." }
+        ]
+      },
+      "authority": {
+        "eyebrow": "Fondamento normativo",
+        "title": "Non è opinione. È diritto.",
+        "norms": ["art. 1283 c.c.", "L. 108/96", "art. 117 TUB", "art. 119 TUB", "D.Lgs. 231/2002"],
+        "sentenze": ["Cass. SU 15130/2024", "Cass. 18664/2023", "Cass. 26724/2007", "Cass. 1712/1995"]
+      },
+      "outcomes": [
+        { "title": "Rata più bassa", "body": "Ricalcolo che può ridurre l'importo mensile.", "icon": "trending-down" },
+        { "title": "Debito ridotto", "body": "Saldo residuo corretto sulla base delle anomalie.", "icon": "shield" },
+        { "title": "Soldi indietro", "body": "Gli importi che hai pagato in più ti vengono rimborsati o scalati dal debito residuo.", "icon": "hand-coins" },
+        { "title": "Saldo azzerato", "body": "Quando le illegittimità superano quanto ancora dovuto.", "icon": "check-circle" }
+      ]
+    },
+    "diagnosis": {
+      "eyebrow": "Non sai da dove iniziare?",
+      "title": "Tre domande. Ti indichiamo la strada.",
+      "lead": "Rispondi in pochi secondi: ti suggeriamo il percorso più adatto al tuo caso.",
+      "questions": [
+        {
+          "id": "rapporto",
+          "prompt": "Che tipo di rapporto hai con la banca?",
+          "options": [
+            { "label": "Mutuo", "value": "mutui" },
+            { "label": "Conto corrente / affidamento", "value": "conti-correnti" },
+            { "label": "Leasing", "value": "leasing" },
+            { "label": "Finanziamento o prestito", "value": "finanziamenti-rateali" }
+          ]
+        },
+        {
+          "id": "situazione",
+          "prompt": "Com'è la tua situazione oggi?",
+          "options": [
+            { "label": "Rapporto in corso", "value": "attivo" },
+            { "label": "Rapporto chiuso da meno di 10 anni", "value": "chiuso" },
+            { "label": "Ho ricevuto un atto (decreto, precetto, lettera)", "value": "atto" }
+          ]
+        },
+        {
+          "id": "atto",
+          "prompt": "Se hai ricevuto un atto, quale?",
+          "options": [
+            { "label": "Decreto ingiuntivo", "value": "decreto-ingiuntivo" },
+            { "label": "Atto di precetto", "value": "precetto" },
+            { "label": "Richiesta di recupero crediti", "value": "recupero-crediti" },
+            { "label": "Nessun atto / non so", "value": "nessuno" }
+          ]
+        }
+      ],
+      "results": {
+        "mutui": { "title": "Analisi mutuo", "body": "Verifichiamo anatocismo, usura e indeterminatezza sul tuo mutuo.", "path": "/servizi/mutui", "cta": "Vai all'analisi mutui" },
+        "conti-correnti": { "title": "Analisi conto corrente", "body": "Controlliamo interessi, commissioni e saldo su conti e affidamenti.", "path": "/servizi/conti-correnti", "cta": "Vai all'analisi conti" },
+        "leasing": { "title": "Analisi leasing", "body": "Il canone non racconta tutto: verifichiamo la struttura del contratto.", "path": "/servizi/leasing", "cta": "Vai all'analisi leasing" },
+        "finanziamenti-rateali": { "title": "Analisi finanziamenti", "body": "Prestiti, cessione del quinto, revolving: controlliamo costi e tassi.", "path": "/servizi/finanziamenti-rateali", "cta": "Vai all'analisi finanziamenti" },
+        "decreto-ingiuntivo": { "title": "SOS Decreto ingiuntivo", "body": "Hai 40 giorni per opporti. Prima verifichiamo se l'importo è corretto.", "path": "/controversie/decreto-ingiuntivo", "cta": "Vai al SOS decreto" },
+        "precetto": { "title": "SOS Precetto", "body": "Prima dell'esecuzione forzata: verifica la cifra richiesta.", "path": "/controversie/precetto", "cta": "Vai al SOS precetto" },
+        "recupero-crediti": { "title": "SOS Recupero crediti", "body": "Prima di pagare o firmare: controlla se devi davvero quella cifra.", "path": "/controversie/recupero-crediti", "cta": "Vai al SOS recupero" }
+      },
+      "restart": "Ricomincia",
+      "back": "Indietro",
+      "next": "Avanti",
+      "showResult": "Vedi il consiglio"
+    },
+    "home": {
+      "hero": {
+        "eyebrow": "Verifica gratuita · Pagamento anche a risultato",
+        "title": "La tua banca potrebbe averti chiesto più del dovuto.",
+        "lead": "Mutui, conti correnti, leasing, finanziamenti. Scopri gratis se stai pagando più del dovuto."
+      },
+      "checks": {
+        "eyebrow": "Cosa controlliamo",
+        "title": "Tre verifiche. Una sola domanda: è corretto?"
+      },
+      "bento": {
+        "eyebrow": "Cosa analizziamo",
+        "title": "Quattro rapporti. Una sola domanda.",
+        "cells": [
+          { "title": "Mutui", "hint": "Fisso, variabile, fondiario, anche estinti", "path": "/servizi/mutui", "size": "lg" },
+          { "title": "Conti correnti", "hint": "Affidati, aperture di credito, aziendali", "path": "/servizi/conti-correnti", "size": "sm" },
+          { "title": "Leasing", "hint": "Immobiliare, strumentale, veicoli", "path": "/servizi/leasing", "size": "sm" },
+          { "title": "Finanziamenti", "hint": "Prestiti, cessione del quinto, revolving", "path": "/servizi/finanziamenti-rateali", "size": "lg" }
+        ]
+      },
+      "perche": {
+        "eyebrow": "Perché Check-up Bancario",
+        "title": "Una struttura specializzata. Solo banche.",
+        "items": [
+          { "title": "Dal 2005", "body": "Esperienza nel contenzioso bancario." },
+          { "title": "Solo banking", "body": "Nessun'altra materia. Solo rapporti bancari." },
+          { "title": "Tutta Italia", "body": "Telefono, video, e-mail. Niente trasferte." },
+          { "title": "Analisi gratuita", "body": "La prima verifica non costa nulla." },
+          { "title": "Oltre il 90%", "body": "Esiti favorevoli sulle pratiche seguite." },
+          { "title": "A risultato", "body": "In molti casi paghi solo se recuperi." }
+        ]
+      },
+      "testimonials": {
+        "eyebrow": "Risultati dei nostri clienti",
+        "title": "Casi reali, importi reali.",
+        "items": [
+          { "quote": "Pensavo di non poter più fare nulla. Mi sbagliavo.", "amount": "€ 8.500 restituiti", "who": "Cliente A. — mutuo prima casa" },
+          { "quote": "18 anni di conto corrente. Una cifra che non immaginavo.", "amount": "€ 150.000+ in transazione", "who": "Azienda manifatturiera del nord" },
+          { "quote": "La rata è scesa di più della metà. Respiro.", "amount": "da € 600 a € 256 al mese", "who": "Famiglia del centro Italia" }
+        ],
+        "disclaimer": "Casi reali, dati anonimizzati. Ogni situazione fa storia a sé."
+      },
+      "sosBanner": {
+        "eyebrow": "SOS bancario",
+        "title": "Decreto, precetto, recupero crediti?",
+        "lead": "Ci sono scadenze precise. Più aspetti, meno puoi fare.",
+        "items": [
+          { "label": "Decreto ingiuntivo", "deadline": "40 giorni", "path": "/controversie/decreto-ingiuntivo" },
+          { "label": "Precetto", "deadline": "10 giorni", "path": "/controversie/precetto" },
+          { "label": "Recupero crediti", "deadline": "Agisci subito", "path": "/controversie/recupero-crediti" }
+        ]
+      },
+      "narrative": {
+        "problem": {
+          "eyebrow": "Il problema",
+          "headline": "Firmi ogni mese. Ma la matematica del contratto non l'hai mai vista.",
+          "body": "Mutui, conti, leasing, finanziamenti: condizioni scritte in linguaggio tecnico, interessi calcolati in modi che non puoi verificare da solo. La banca ti presenta un saldo. Non è detto che sia quello giusto."
+        },
+        "guide": {
+          "eyebrow": "La guida",
+          "headline": "Dal 2005 verifichiamo solo rapporti bancari. Nient'altro.",
+          "body": "Check-up Bancario nasce per una cosa: controllare se stai pagando più del dovuto. Analisi gratuita, assistenza completa, pagamento anche a risultato. Operiamo in tutta Italia."
+        }
+      },
+      "problemNumbers": {
+        "eyebrow": "Il quadro reale",
+        "title": "Non sei solo. E non è colpa tua.",
+        "lead": "Migliaia di famiglie e imprese scoprono ogni anno anomalie nei rapporti bancari. La maggior parte non le aveva mai controllate.",
+        "hero": { "value": 90, "prefix": "oltre ", "suffix": "%", "label": "dei rapporti analizzati presenta almeno un'anomalia rilevante" },
+        "support": [
+          { "value": 6000000, "prefix": "oltre ", "label": "di famiglie italiane con un mutuo attivo" },
+          { "value": 80, "prefix": "oltre ", "suffix": "%", "label": "dei conti correnti affidati con anomalie" },
+          { "value": 70, "prefix": "oltre ", "suffix": "%", "label": "dei contratti di leasing con anomalie" }
+        ]
+      },
+      "outcomes": {
+        "eyebrow": "Cosa può cambiare?",
+        "title": "Nessuna promessa magica. Solo risultati reali.",
+        "lead": "Analizziamo i tuoi contratti ed estratti conto per capire se ci sono i presupposti per farti ottenere una di queste quattro soluzioni concrete:"
+      },
+      "bridge": {
+        "eyebrow": "Come è possibile?",
+        "headline": "Questi risultati non nascono dal nulla.",
+        "body": "Dietro ogni rata che si abbassa e ogni euro che torna indietro c'è una cosa sola: un'analisi tecnica del tuo contratto. Non cerchiamo a caso. Andiamo a controllare tre cose precise."
+      },
+      "guide": {
+        "eyebrow": "Chi siamo",
+        "headline": "Una struttura specializzata. Solo banche.",
+        "body": "Non siamo un call center generico. Dal 2005 ci occupiamo esclusivamente di rapporti bancari e finanziari: mutui, conti, leasing, finanziamenti e controversie con banche e intermediari.",
+        "link": "Scopri la nostra storia",
+        "path": "/chi-siamo"
+      },
+      "stakes": {
+        "eyebrow": "Cosa rischi se aspetti",
+        "title": "Il tempo non è neutro.",
+        "items": [
+          { "title": "Continui a pagare di più", "body": "Ogni mese senza verifica è un mese in cui potresti pagare interessi o commissioni non dovute." },
+          { "title": "La prescrizione corre", "body": "Su rapporti chiusi, dopo dieci anni molte contestazioni non sono più possibili." },
+          { "title": "Gli atti diventano definitivi", "body": "Decreti ingiuntivi e precetti hanno scadenze precise. Dopo, le opzioni si riducono." }
+        ]
+      },
+      "stakesBridge": {
+        "eyebrow": "Il passo successivo",
+        "headline": "Il modo più veloce per saperlo.",
+        "body": "Una verifica gratuita sulla tua documentazione ti dice in pochi giorni se conviene muoverti — e come."
+      },
+      "faqTeaser": {
+        "eyebrow": "Domande frequenti",
+        "title": "Hai dubbi? È normale.",
+        "lead": "Risposte oneste alle domande che ci fanno più spesso.",
+        "link": "Vedi tutte le FAQ",
+        "path": "/faq"
+      }
+    },
+    "servizi": {
+      "mutui": {
+        "accent": "gold",
+        "layout": "mutui",
+        "sectionOrder": ["narrative", "beforeAfter", "checks", "tipi", "outcomes", "stakes", "estinto", "stepper", "stats", "authority"],
+        "hero": {
+          "eyebrow": "Analisi mutui",
+          "title": "Paghi una rata. Ma quanto stai pagando davvero?",
+          "lead": "Anatocismo, usura, indeterminatezza: anomalie che possono cambiare il costo del tuo mutuo."
+        },
+        "narrative": {
+          "eyebrow": "Il problema",
+          "headline": "La rata è chiara. Il costo totale no.",
+          "body": "Hai firmato un contratto con decine di pagine. Tasso, spread, commissioni, assicurazioni: ogni voce incide sul piano di ammortamento. Senza strumenti tecnici, è impossibile sapere se stai pagando il giusto."
+        },
+        "beforeAfter": {
+          "eyebrow": "Mutuo in essere",
+          "title": "Cosa può emergere da una verifica.",
+          "beforeLabel": "Prima",
+          "afterLabel": "Dopo",
+          "rows": [
+            { "label": "Rata mensile", "before": "€ 620", "after": "€ 310" },
+            { "label": "Durata residua", "before": "18 anni", "after": "12 anni" },
+            { "label": "Interessi futuri", "before": "€ 48.000", "after": "€ 22.000" }
+          ],
+          "bridge": {
+            "eyebrow": "Un caso tipo",
+            "headline": "Dal contratto alla rata corretta.",
+            "body": "Un mutuo prima casa con piano in capitalizzazione composta: dopo la verifica tecnica, la rata e gli interessi futuri sono stati ricalcolati sulla base delle illegittimità emerse."
+          }
+        },
+        "checks": {
+          "eyebrow": "Verifiche sul mutuo",
+          "title": "Tre controlli sul piano di ammortamento.",
+          "bridge": {
+            "eyebrow": "Perché conta",
+            "headline": "La rata che paghi nasce da questi tre punti.",
+            "body": "Anatocismo, usura e indeterminatezza non sono etichette generiche: sono i tre errori che più spesso alterano un mutuo italiano. Li verifichiamo sul tuo contratto, riga per riga."
+          }
+        },
+        "stakes": {
+          "eyebrow": "Se aspetti",
+          "title": "Ogni mese conta.",
+          "items": [
+            { "title": "Interessi che si accumulano", "body": "Anatocismo e usura fanno crescere il debito più velocemente di quanto immagini." },
+            { "title": "Mutuo estinto? Ancora 10 anni", "body": "Se l'hai chiuso da meno di dieci anni, puoi ancora recuperare somme pagate in eccesso." }
+          ]
+        },
+        "outcomesIntro": {
+          "eyebrow": "Cosa può cambiare",
+          "title": "Risultati concreti sul mutuo.",
+          "lead": "Se emergono anomalie, questi sono gli esiti più frequenti sui mutui che analizziamo."
+        },
+        "outcomes": [
+          { "title": "Rata più bassa", "body": "Ricalcolo del piano di ammortamento.", "icon": "trending-down" },
+          { "title": "Durata ridotta", "body": "Meno anni di pagamenti.", "icon": "calendar" },
+          { "title": "Soldi indietro", "body": "Gli importi pagati in più ti vengono rimborsati.", "icon": "hand-coins" }
+        ],
+        "tipi": {
+          "title": "Quali mutui analizziamo",
+          "items": ["Tasso fisso", "Tasso variabile", "Fondiari", "Ipotecari", "Prima casa", "Immobili commerciali", "Mutui estinti"]
+        },
+        "documenti": {
+          "title": "Cosa serve, di solito",
+          "items": ["Contratto di mutuo", "Piano di ammortamento", "Quietanze", "Documentazione bancaria"]
+        },
+        "estinto": {
+          "title": "Mutuo già estinto?",
+          "body": "Se l'hai chiuso da meno di dieci anni, puoi ancora verificarlo e recuperare somme pagate in più."
+        }
+      },
+      "conti-correnti": {
+        "accent": "navy",
+        "layout": "conti",
+        "sectionOrder": ["beforeAfter", "narrative", "checks", "tipi", "outcomes", "stakes", "estinto", "stepper", "stats", "authority"],
+        "hero": {
+          "eyebrow": "Analisi conti correnti",
+          "title": "Il saldo della banca non è la verità. È una sua versione.",
+          "lead": "Sui conti affidati e sulle aperture di credito, anni di interessi e commissioni possono cambiare il saldo."
+        },
+        "narrative": {
+          "eyebrow": "Il problema",
+          "headline": "Anni di movimenti. Un saldo che non torna.",
+          "body": "Sui conti affidati e sulle aperture di credito, interessi capitalizzati, commissioni nascoste e spese non pattuite possono alterare il saldo per anni. La banca presenta un numero: tocca a te verificarlo."
+        },
+        "beforeAfter": {
+          "eyebrow": "Conto affidato",
+          "title": "Il saldo può cambiare radicalmente.",
+          "beforeLabel": "Prima",
+          "afterLabel": "Dopo",
+          "rows": [
+            { "label": "Saldo banca", "before": "€ 85.000 a debito", "after": "€ 12.000 a debito" },
+            { "label": "Interessi illegittimi", "before": "€ 73.000", "after": "€ 0" },
+            { "label": "Soldi indietro", "before": "—", "after": "€ 45.000" }
+          ],
+          "bridge": {
+            "eyebrow": "Cosa è successo",
+            "headline": "Il saldo della banca non coincideva con i movimenti.",
+            "body": "Dopo anni di estratti conto e capitalizzazioni non verificate, il ricalcolo ha eliminato interessi e commissioni non dovute: il debito residuo è sceso di oltre € 70.000."
+          }
+        },
+        "checks": {
+          "eyebrow": "Verifiche sul conto",
+          "title": "Tre controlli su movimenti e saldo.",
+          "bridge": {
+            "eyebrow": "Dietro il numero",
+            "headline": "Il saldo che vedi in home banking può essere sbagliato.",
+            "body": "Su conti affidati e aperture di credito, gli stessi tre vizi — anatocismo, usura, indeterminatezza — si ripetono per anni senza essere visibili nel saldo mostrato."
+          }
+        },
+        "stakes": {
+          "eyebrow": "Se aspetti",
+          "title": "Dieci anni passano in fretta.",
+          "items": [
+            { "title": "La prescrizione scade", "body": "Su conti chiusi, dopo dieci anni molte contestazioni non sono più possibili." },
+            { "title": "Il debito cresce", "body": "Su rapporti aperti, interessi e commissioni continuano ad accumularsi." }
+          ]
+        },
+        "outcomesIntro": {
+          "eyebrow": "Cosa può cambiare",
+          "title": "Risultati concreti sul conto.",
+          "lead": "Su conti affidati e aperture di credito, una verifica può ridurre il debito o restituire somme già pagate."
+        },
+        "outcomes": [
+          { "title": "Saldo ridotto", "body": "Debito corretto sulla base delle anomalie.", "icon": "shield" },
+          { "title": "Soldi indietro", "body": "Gli importi addebitati ingiustamente ti vengono rimborsati.", "icon": "hand-coins" },
+          { "title": "Saldo azzerato", "body": "Quando le illegittimità superano il debito.", "icon": "check-circle" }
+        ],
+        "tipi": {
+          "title": "Quali rapporti analizziamo",
+          "items": ["Conti affidati", "Aperture di credito", "Affidamenti", "Conti aziendali", "Conti professionali", "Conti privati", "Rapporti chiusi"]
+        },
+        "documenti": {
+          "title": "Cosa serve, di solito",
+          "items": ["Contratto di conto", "Contratto di affidamento", "Estratti conto", "Scalari", "Comunicazioni della banca"]
+        },
+        "estinto": {
+          "title": "Conto chiuso da meno di 10 anni?",
+          "body": "Puoi ancora chiedere indietro somme addebitate in modo non corretto. Il rapporto è già cessato: nessun timore di ripercussioni."
+        }
+      },
+      "leasing": {
+        "accent": "emerald",
+        "layout": "leasing",
+        "sectionOrder": ["narrative", "tipi", "beforeAfter", "checks", "outcomes", "stakes", "estinto", "stepper", "stats", "authority"],
+        "hero": {
+          "eyebrow": "Analisi leasing",
+          "title": "Guardi il canone. Il costo vero è altrove.",
+          "lead": "La struttura del leasing è complessa: il costo complessivo raramente è quello che sembra."
+        },
+        "narrative": {
+          "eyebrow": "Il problema",
+          "headline": "Canone mensile. Costo totale opaco.",
+          "body": "Il leasing combina canoni, maxi-canone, opzione di riscatto, oneri accessori. La struttura è pensata per sembrare conveniente, ma il costo effettivo spesso supera di molto quello di un finanziamento tradizionale."
+        },
+        "beforeAfter": {
+          "eyebrow": "Leasing strumentale",
+          "title": "Il costo reale emerge dal calcolo.",
+          "beforeLabel": "Prima",
+          "afterLabel": "Dopo",
+          "rows": [
+            { "label": "Canone mensile", "before": "€ 1.200", "after": "€ 780" },
+            { "label": "Costo totale", "before": "€ 86.400", "after": "€ 56.160" },
+            { "label": "Soldi indietro", "before": "—", "after": "€ 18.000" }
+          ],
+          "bridge": {
+            "eyebrow": "Struttura nascosta",
+            "headline": "Il canone non raccontava il costo totale.",
+            "body": "Maxi-canone, riscatto e oneri accessori erano distribuiti nel contratto in modo da sembrare un canone «gestibile». Il ricalcolo ha mostrato un costo effettivo molto superiore a quello dichiarato."
+          }
+        },
+        "checks": {
+          "eyebrow": "Verifiche sul leasing",
+          "title": "Tre controlli sulla struttura del contratto.",
+          "bridge": {
+            "eyebrow": "Oltre il canone",
+            "headline": "Il leasing si legge come un finanziamento mascherato.",
+            "body": "Canoni, maxi-canone e opzione di riscatto vanno verificati insieme: gli stessi tre controlli che usiamo sui mutui si applicano alla struttura economica del leasing."
+          }
+        },
+        "stakes": {
+          "eyebrow": "Se aspetti",
+          "title": "Leasing concluso? Ancora tempo.",
+          "items": [
+            { "title": "Leasing chiuso da meno di 10 anni", "body": "Puoi ancora verificare anomalie e recuperare somme." },
+            { "title": "Canoni che continuano", "body": "Su leasing attivi, ogni mese senza verifica è un mese a rischio." }
+          ]
+        },
+        "outcomesIntro": {
+          "eyebrow": "Cosa può cambiare",
+          "title": "Risultati concreti sul leasing.",
+          "lead": "Canoni, costo totale e oneri accessori possono essere ricalcolati se la struttura contrattuale non regge."
+        },
+        "outcomes": [
+          { "title": "Canone ridotto", "body": "Ricalcolo della struttura contrattuale.", "icon": "trending-down" },
+          { "title": "Costo totale minore", "body": "Eliminazione di oneri illegittimi.", "icon": "shield" },
+          { "title": "Soldi indietro", "body": "I canoni pagati in più ti vengono rimborsati.", "icon": "hand-coins" }
+        ],
+        "tipi": {
+          "title": "Quali leasing analizziamo",
+          "items": ["Immobiliare", "Strumentale", "Veicoli", "Capannoni", "Macchinari", "Flotte aziendali", "Leasing conclusi"]
+        },
+        "documenti": {
+          "title": "Cosa serve, di solito",
+          "items": ["Contratto di leasing", "Piano finanziario", "Canoni pagati", "Comunicazioni della concedente"]
+        },
+        "estinto": {
+          "title": "Leasing già concluso?",
+          "body": "Se è terminato da meno di dieci anni, una verifica può ancora far emergere anomalie e somme recuperabili."
+        }
+      },
+      "finanziamenti-rateali": {
+        "accent": "coral",
+        "layout": "finanziamenti",
+        "sectionOrder": ["narrative", "outcomes", "beforeAfter", "checks", "tipi", "stakes", "estinto", "stepper", "stats", "authority"],
+        "hero": {
+          "eyebrow": "Analisi finanziamenti rateali",
+          "title": "La rata è sostenibile. Il costo totale forse no.",
+          "lead": "Prestiti, cessione del quinto, revolving: tassi, spese e assicurazioni possono pesare più di quanto immagini."
+        },
+        "narrative": {
+          "eyebrow": "Il problema",
+          "headline": "Rata comoda. Tasso nascosto.",
+          "body": "Prestiti personali, cessione del quinto, carte revolving: la rata mensile sembra gestibile, ma tassi effettivi, spese di istruttoria, assicurazioni obbligatorie e commissioni possono rendere il credito molto più costoso del previsto."
+        },
+        "beforeAfter": {
+          "eyebrow": "Prestito personale",
+          "title": "Il TAEG racconta un'altra storia.",
+          "beforeLabel": "Prima",
+          "afterLabel": "Dopo",
+          "rows": [
+            { "label": "Rata mensile", "before": "€ 380", "after": "€ 210" },
+            { "label": "Costo totale", "before": "€ 22.800", "after": "€ 12.600" },
+            { "label": "Interessi restituiti", "before": "—", "after": "€ 4.200" }
+          ],
+          "bridge": {
+            "eyebrow": "Rata comoda, costo alto",
+            "headline": "Il TAEG dichiarato non coincideva con quello effettivo.",
+            "body": "Spese di istruttoria, assicurazioni obbligatorie e commissioni erano state escluse dal calcolo presentato in contratto. La verifica ha ridotto rata e costo totale del credito."
+          }
+        },
+        "checks": {
+          "eyebrow": "Verifiche sul finanziamento",
+          "title": "Tre controlli su tasso e costo del credito.",
+          "bridge": {
+            "eyebrow": "TAEG e oltre",
+            "headline": "La rata mensile non basta a capire se stai pagando troppo.",
+            "body": "Su prestiti, cessione del quinto e revolving verifichiamo il costo reale del credito: tasso, spese accessorie e regime di calcolo degli interessi."
+          }
+        },
+        "stakes": {
+          "eyebrow": "Se aspetti",
+          "title": "Finanziamento estinto? Verifica ora.",
+          "items": [
+            { "title": "Chiuso da meno di 10 anni", "body": "Anche i finanziamenti terminati possono nascondere somme recuperabili." },
+            { "title": "Revolving che non finisce mai", "body": "Le carte revolving sono tra i prodotti con anomalie più frequenti." }
+          ]
+        },
+        "outcomesIntro": {
+          "eyebrow": "Cosa può cambiare",
+          "title": "Risultati concreti sul finanziamento.",
+          "lead": "Rata, costo totale e interessi pagati possono scendere se tasso e spese non erano determinati correttamente."
+        },
+        "outcomes": [
+          { "title": "Rata più bassa", "body": "Ricalcolo del piano di rimborso.", "icon": "trending-down" },
+          { "title": "Debito ridotto", "body": "Saldo corretto sulle anomalie.", "icon": "shield" },
+          { "title": "Soldi indietro", "body": "Le rate pagate in più ti vengono rimborsate.", "icon": "hand-coins" }
+        ],
+        "tipi": {
+          "title": "Quali finanziamenti analizziamo",
+          "items": ["Prestiti personali", "Finanziamenti finalizzati", "Cessione del quinto", "Carte revolving", "Consolidamento debiti"]
+        },
+        "documenti": {
+          "title": "Cosa serve, di solito",
+          "items": ["Contratto di finanziamento", "Piano di ammortamento", "Pagamenti effettuati", "Comunicazioni della finanziaria"]
+        },
+        "estinto": {
+          "title": "Finanziamento già estinto?",
+          "body": "Anche i finanziamenti chiusi da meno di dieci anni possono meritare una verifica."
+        }
+      }
+    },
+    "controversie": {
+      "decreto-ingiuntivo": {
+        "hero": {
+          "eyebrow": "SOS Decreto ingiuntivo",
+          "title": "40 giorni. Dopo, decide la banca.",
+          "lead": "Hai ricevuto un decreto ingiuntivo? In quei giorni si può ancora contestare l'importo."
+        },
+        "deadline": "40 giorni per opporti",
+        "stakes": {
+          "eyebrow": "La clessidra",
+          "title": "40 giorni. Poi il decreto diventa esecutivo.",
+          "items": [
+            { "title": "Opposizione entro 40 giorni", "body": "Dalla notifica del decreto hai 40 giorni per presentare opposizione. Dopo, le opzioni si riducono drasticamente." },
+            { "title": "L'importo non è verificato", "body": "Il tribunale emette il decreto sulla base di quanto chiede la banca. Non verifica i conteggi." },
+            { "title": "Il credito può essere gonfiato", "body": "Anatocismo, usura e indeterminatezza possono avere gonfiato l'importo richiesto." }
+          ]
+        },
+        "timeline": [
+          { "title": "Ricevi il decreto", "body": "La banca o il tribunale ti notifica l'atto. Parte il conteggio dei 40 giorni." },
+          { "title": "Verifica la documentazione", "body": "Controlliamo il contratto originario e i conteggi su cui si basa il credito." },
+          { "title": "Opposizione o trattativa", "body": "Se emergono anomalie, si può opporsi o avviare una trattativa per ridurre l'importo." },
+          { "title": "Dopo i 40 giorni", "body": "Senza opposizione, il decreto diventa titolo esecutivo. Le opzioni di difesa si riducono." }
+        ],
+        "intro": {
+          "hook": "Un decreto ingiuntivo non significa che le somme richieste siano corrette.",
+          "detail": "Il decreto ingiuntivo è un provvedimento con cui il Tribunale ti intima di pagare. Spesso nasce da saldi di conto, scoperti, mutui, leasing o finanziamenti. Il fatto che la banca l'abbia ottenuto non rende automaticamente dovuto tutto l'importo: in quei giorni si possono ancora verificare i conteggi e opporre vizi di forma e di merito."
+        },
+        "origine": {
+          "title": "Da dove può nascere il credito",
+          "items": ["Conti affidati", "Aperture di credito", "Mutui", "Leasing", "Prestiti personali", "Finanziamenti rateali"]
+        }
+      },
+      "precetto": {
+        "hero": {
+          "eyebrow": "SOS Precetto",
+          "title": "Il precetto non è la fine. È l'ultima porta aperta.",
+          "lead": "L'atto di precetto precede l'esecuzione forzata. Ma la cifra richiesta va comunque verificata."
+        },
+        "deadline": "10 giorni minimo per adempiere",
+        "stakes": {
+          "eyebrow": "La clessidra",
+          "title": "Dopo il precetto, l'esecuzione forzata è a un passo.",
+          "items": [
+            { "title": "10 giorni per adempiere", "body": "Dal precetto hai almeno 10 giorni per pagare o contestare. Poi possono iniziare pignoramenti." },
+            { "title": "Pignoramento conto, stipendio, casa", "body": "L'esecuzione forzata può colpire conti correnti, stipendi, pensioni e immobili." },
+            { "title": "L'importo va verificato", "body": "Il precetto si basa su un credito che potrebbe essere calcolato in modo errato." }
+          ]
+        },
+        "timeline": [
+          { "title": "Ricevi il precetto", "body": "Intimazione di pagamento con minimo 10 giorni per adempiere." },
+          { "title": "Verifica il credito", "body": "Analizziamo il decreto o il titolo esecutivo e il rapporto originario." },
+          { "title": "Contestazione o trattativa", "body": "Se l'importo non regge, si può contestare o negoziare una riduzione." },
+          { "title": "Esecuzione forzata", "body": "Senza reazione, possono iniziare pignoramenti su beni e redditi." }
+        ],
+        "intro": {
+          "hook": "Arrivati al precetto, molti pensano che non ci sia più nulla da fare. Non è così.",
+          "detail": "L'atto di precetto è l'intimazione di pagamento che precede pignoramenti su conto, stipendio, pensione o immobili. Soprattutto quando deriva da rapporti bancari, è importante capire da dove nasce il credito e se l'importo è stato calcolato correttamente."
+        },
+        "origine": {
+          "title": "Da dove può nascere il credito",
+          "items": ["Conti correnti", "Aperture di credito", "Mutui", "Leasing", "Prestiti personali", "Cessione del quinto"]
+        }
+      },
+      "recupero-crediti": {
+        "hero": {
+          "eyebrow": "SOS Recupero crediti",
+          "title": "Prima di pagare: sei sicuro di dovere quella cifra?",
+          "lead": "Telefonate, lettere, proposte di saldo e stralcio. Verifica la tua posizione prima di firmare."
+        },
+        "deadline": "Agisci prima di firmare",
+        "stakes": {
+          "eyebrow": "Prima di firmare",
+          "title": "Una firma può costarti caro.",
+          "items": [
+            { "title": "Riconoscimento del debito", "body": "Firmare un accordo o riconoscere il debito può precludere future contestazioni." },
+            { "title": "Debito ceduto, importo gonfiato", "body": "Le società di recupero crediti spesso chiedono cifre superiori al dovuto." },
+            { "title": "Saldo e stralcio non sempre conviene", "body": "Prima di accettare, verifica se l'importo richiesto è corretto." }
+          ]
+        },
+        "timeline": [
+          { "title": "Arriva la richiesta", "body": "Telefonate, lettere, e-mail da banca o società di recupero crediti." },
+          { "title": "Verifica l'origine", "body": "Controlliamo il rapporto originario e la catena di cessione del credito." },
+          { "title": "Calcolo corretto", "body": "Ricalcoliamo l'importo effettivamente dovuto, eliminando anomalie." },
+          { "title": "Trattativa informata", "body": "Con i numeri giusti, puoi negoziare o contestare con consapevolezza." }
+        ],
+        "intro": {
+          "hook": "Una richiesta di pagamento non significa che il debito sia corretto o davvero dovuto.",
+          "detail": "Molte richieste arrivano da società che hanno acquistato il debito. La cessione del credito non rende automaticamente esigibile l'intero importo: spesso, ricalcolando il rapporto originario, la cifra effettivamente dovuta è molto inferiore. Prima di pagare, riconoscere il debito o accettare un saldo e stralcio, conviene verificare."
+        },
+        "origine": {
+          "title": "Da dove può nascere il credito",
+          "items": ["Conti affidati", "Aperture di credito", "Mutui", "Leasing", "Prestiti personali", "Carte revolving", "Debiti ceduti"]
+        }
+      }
+    },
+    "chiSiamo": {
+      "hero": {
+        "eyebrow": "Chi siamo",
+        "title": "Dal 2005, solo banche. Niente altro.",
+        "lead": "Una struttura specializzata nella verifica dei rapporti bancari e nelle controversie con banche e intermediari finanziari."
+      },
+      "narrative": {
+        "eyebrow": "Perché esistiamo",
+        "headline": "Perché firmare un contratto bancario non dovrebbe significare accettare alla cieca.",
+        "body": "Check-up Bancario nasce da un'esperienza ventennale nel contenzioso bancario. Abbiamo visto migliaia di famiglie e imprese pagare più del dovuto, senza saperlo. La nostra missione è semplice: verificare, spiegare, difendere."
+      },
+      "timeline": [
+        { "year": "2005", "title": "L'inizio", "body": "Esperienza nell'analisi dei rapporti bancari e nel contenzioso finanziario." },
+        { "year": "2015", "title": "Un solo marchio", "body": "Professionisti da esperienze diverse si uniscono sotto Check-up Bancario." },
+        { "year": "Oggi", "title": "Tutta Italia", "body": "Assistiamo clienti su tutto il territorio nazionale, da remoto." }
+      ],
+      "metodo": {
+        "eyebrow": "Il metodo di calcolo",
+        "title": "Rigore tecnico, non improvvisazione.",
+        "body": "Per i nostri calcoli ci appoggiamo al gruppo tecnico di Attuariale.com, che fa capo al Prof. Antonio Annibali (Università La Sapienza di Roma). Le analisi sono predisposte per essere solide e difendibili, in trattativa come in giudizio.",
+        "note": "Il rapporto tra cliente e avvocato resta sempre diretto e trasparente. Noi coordiniamo e controlliamo l'attività tecnica."
+      },
+      "quote": "Questo lavoro non si improvvisa. Ogni pratica viene affrontata con un approccio metodico, documentato e tecnicamente fondato.",
+      "modi": {
+        "title": "Come lavoriamo, ovunque tu sia",
+        "items": ["Telefonicamente", "In videoconferenza", "Via e-mail", "Con appuntamenti online"]
+      }
+    },
+    "faq": {
+      "hero": {
+        "eyebrow": "FAQ",
+        "title": "Domande oneste, risposte oneste.",
+        "lead": "Non trovi quello che cerchi? Scrivici o chiamaci, senza impegno."
+      },
+      "microcopy": {
+        "title": "Ancora dubbi?",
+        "lead": "La prima valutazione è gratuita e senza impegno.",
+        "cta": "Chiamaci ora"
+      },
+      "items": [
+        { "q": "L'analisi preliminare è davvero gratuita?", "a": "Sì. La prima valutazione della documentazione è gratuita e non comporta alcun impegno. Serve a capire se ci sono elementi che meritano approfondimento." },
+        { "q": "Quali documenti devo inviare?", "a": "Dipende dal rapporto: di norma contratto, piano di ammortamento o estratti conto, e la documentazione disponibile. Al primo contatto ti diciamo esattamente cosa serve." },
+        { "q": "Se non ho tutti i documenti?", "a": "Nessun problema. Capita spesso. Ti spieghiamo come richiederli alla banca o all'intermediario." },
+        { "q": "Operate in tutta Italia?", "a": "Sì. Seguiamo i clienti su tutto il territorio, per telefono, videoconferenza, e-mail e appuntamenti online." },
+        { "q": "Devo venire nei vostri uffici?", "a": "Quasi mai. La maggior parte delle pratiche si segue interamente a distanza." },
+        { "q": "Quanto dura la verifica?", "a": "Dipende dalla complessità e dai documenti. Dopo il primo contatto possiamo darti indicazioni più precise." },
+        { "q": "Posso verificare un rapporto già chiuso?", "a": "Sì. Mutui estinti, conti chiusi, leasing e finanziamenti terminati: se la chiusura è di meno di dieci anni, spesso si può ancora fare molto." },
+        { "q": "Ho ricevuto un decreto ingiuntivo o un precetto.", "a": "Contattaci subito: il tempo è un fattore decisivo. Prima esaminiamo la documentazione, più margine c'è per valutare le strategie." },
+        { "q": "Una società di recupero crediti mi sta contattando.", "a": "Non prendere decisioni affrettate. Prima di pagare, riconoscere il debito o firmare accordi, verifica la correttezza delle somme richieste." },
+        { "q": "Come funziona il pagamento?", "a": "Ogni pratica è valutata singolarmente. Dopo la verifica illustriamo attività, costi e tempi. In molti casi è possibile pagare anche a risultato." },
+        { "q": "Quanto costa chiedere informazioni?", "a": "Nulla. Puoi contattarci per telefono, WhatsApp o e-mail per una prima valutazione senza impegno." }
+      ]
+    },
+    "contatti": {
+      "hero": {
+        "eyebrow": "Contatti",
+        "title": "Parliamo del tuo caso.",
+        "lead": "La verifica preliminare è gratuita e senza impegno. Scegli il canale che preferisci."
+      },
+      "reassurance": "Nessun impegno. Nessun costo per la prima valutazione. I tuoi dati restano riservati.",
+      "diagnosisIntro": "Non sai quale servizio ti serve? Rispondi a tre domande e ti indichiamo la strada.",
+      "channels": {
+        "verdeLabel": "Numero verde",
+        "verdeHint": "Risposta diretta, senza bot",
+        "whatsappLabel": "Telefono e WhatsApp",
+        "whatsappHint": "Chiama o scrivi un messaggio",
+        "emailLabel": "E-mail",
+        "emailHint": "Ti rispondiamo al più presto",
+        "sedeLabel": "Sede legale",
+        "sedeHint": "Operiamo in tutta Italia"
+      },
+      "stepper": {
+        "eyebrow": "Come richiedere la verifica",
+        "title": "Tre passi.",
+        "steps": [
+          { "num": "01", "title": "Contattaci", "body": "Numero verde o WhatsApp." },
+          { "num": "02", "title": "Invia i documenti", "body": "Ti indichiamo quali servono." },
+          { "num": "03", "title": "Ricevi l'analisi", "body": "Verifichiamo le anomalie rilevanti." }
+        ]
+      },
+      "form": {
+        "title": "Modulo di richiesta",
+        "subtitle": "Compila e sarai ricontattato da un consulente.",
+        "name": "Nome e cognome",
+        "phone": "Telefono",
+        "email": "E-mail",
+        "type": "Tipologia della pratica",
+        "typePlaceholder": "Seleziona…",
+        "typeOptions": ["Mutuo", "Conto corrente", "Leasing", "Finanziamento rateale", "Decreto ingiuntivo", "Atto di precetto", "Recupero crediti", "Altro"],
+        "consentPrivacy": "Dichiaro di aver letto e accettato la Privacy Policy.",
+        "consentData": "Acconsento al trattamento dei miei dati per la gestione della richiesta.",
+        "submit": "Richiedi la verifica gratuita",
+        "orCall": "Oppure chiamaci direttamente"
+      }
+    },
+    "legali": {
+      "privacy": {
+        "title": "Privacy Policy",
+        "updated": "Informativa ai sensi degli artt. 13-14 del Regolamento (UE) 2016/679 (GDPR).",
+        "sections": [
+          { "h": "Titolare del trattamento", "p": ["Check-up Bancario, Piazza San Giorgio 2, 20123 Milano. E-mail: checkupbancario@gmail.com."] },
+          { "h": "Dati trattati", "p": ["Trattiamo i dati che ci fornisci per richiedere una verifica o per essere ricontattato: nome, recapiti e i documenti bancari e finanziari che ci invii."] },
+          { "h": "Finalità e base giuridica", "p": ["I dati sono trattati per rispondere alle tue richieste, eseguire la verifica preliminare e l'eventuale assistenza. La base giuridica è l'esecuzione di misure precontrattuali e contrattuali e il tuo consenso, dove richiesto."] },
+          { "h": "Conservazione", "p": ["I dati e i documenti sono conservati per il tempo necessario alle finalità indicate e agli obblighi di legge, poi cancellati o restituiti su richiesta."] },
+          { "h": "Diritti dell'interessato", "p": ["Puoi esercitare in ogni momento i diritti di accesso, rettifica, cancellazione, limitazione, opposizione e portabilità scrivendo ai recapiti del Titolare."] }
+        ]
+      },
+      "cookie": {
+        "title": "Cookie Policy",
+        "updated": "Informativa sull'uso dei cookie e delle tecnologie simili.",
+        "sections": [
+          { "h": "Cosa sono i cookie", "p": ["I cookie sono piccoli file salvati sul dispositivo che consentono il funzionamento del sito e la misurazione delle visite."] },
+          { "h": "Cookie tecnici", "p": ["Utilizziamo cookie tecnici necessari al funzionamento del sito. Non richiedono consenso."] },
+          { "h": "Cookie di misurazione", "p": ["Eventuali cookie di statistica vengono utilizzati in forma aggregata e solo previo consenso, dove previsto."] },
+          { "h": "Gestione dei cookie", "p": ["Puoi gestire o disattivare i cookie dalle impostazioni del tuo browser. La disattivazione di alcuni cookie può limitare alcune funzionalità."] }
+        ]
+      },
+      "disclaimer": {
+        "title": "Disclaimer e finalità del sito",
+        "updated": "Note informative sull'attività e sui contenuti del sito.",
+        "sections": [
+          { "h": "Finalità del sito", "p": ["Questo sito ha finalità informative sull'attività di verifica dei rapporti bancari e finanziari. Non costituisce consulenza legale o finanziaria personalizzata."] },
+          { "h": "Nessuna promessa di risultato", "p": ["Ogni situazione è diversa e va valutata singolarmente sulla base della documentazione disponibile. I risultati passati non garantiscono esiti futuri."] },
+          { "h": "Rapporto con i professionisti", "p": ["Quando la pratica richiede assistenza legale, il rapporto tra cliente e avvocato resta diretto e trasparente. Il nostro ruolo è il supporto tecnico e il coordinamento."] },
+          { "h": "Primo contatto", "p": ["Il primo contatto è gratuito e non costituisce mandato professionale: serve solo a capire se possiamo aiutarti."] }
+        ]
+      }
+    },
+    "footer": {
+      "payoff": "Verifica gratuita. Assistenza completa. Pagamento anche a risultato.",
+      "tagline": "Specialisti nei rapporti bancari dal 2005.",
+      "contactTitle": "Contatti",
+      "columns": {
+        "servizi": {
+          "title": "Servizi",
+          "items": [
+            { "label": "Mutui", "path": "/servizi/mutui" },
+            { "label": "Conti correnti", "path": "/servizi/conti-correnti" },
+            { "label": "Leasing", "path": "/servizi/leasing" },
+            { "label": "Finanziamenti rateali", "path": "/servizi/finanziamenti-rateali" }
+          ]
+        },
+        "controversie": {
+          "title": "Controversie",
+          "items": [
+            { "label": "Decreto ingiuntivo", "path": "/controversie/decreto-ingiuntivo" },
+            { "label": "Precetto", "path": "/controversie/precetto" },
+            { "label": "Recupero crediti", "path": "/controversie/recupero-crediti" }
+          ]
+        },
+        "azienda": {
+          "title": "Azienda",
+          "items": [
+            { "label": "Chi siamo", "path": "/chi-siamo" },
+            { "label": "FAQ", "path": "/faq" },
+            { "label": "Contatti", "path": "/contatti" }
+          ]
+        },
+        "legali": {
+          "title": "Legali",
+          "items": [
+            { "label": "Privacy", "path": "/privacy" },
+            { "label": "Cookie", "path": "/cookie" },
+            { "label": "Disclaimer", "path": "/disclaimer" }
+          ]
+        }
+      },
+      "bottom": "© 2026 Check-up Bancario. Tutti i diritti riservati."
     }
   }
 }

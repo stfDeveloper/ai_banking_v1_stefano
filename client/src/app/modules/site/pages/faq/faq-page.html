@@ -1,0 +1,26 @@
+<app-page-hero [content]="hero" [showCta]="false" />
+
+<section class="site-section site-section--canvas" aria-label="Domande frequenti">
+  <div class="container">
+    <div class="faq-list" appReveal="fade">
+      @for (item of items; track item.q) {
+        <app-disclosure tone="faq" [label]="item.q">
+          <p>{{ item.a }}</p>
+        </app-disclosure>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="site-section site-section--panel" aria-labelledby="faq-micro-title">
+  <div class="container faq-micro" appReveal="fade">
+    <h2 id="faq-micro-title" class="faq-micro__title">{{ 'site.faq.microcopy.title' | t }}</h2>
+    <p class="lead faq-micro__lead">{{ 'site.faq.microcopy.lead' | t }}</p>
+    <a class="btn btn-gold btn-lg" appMagnetic [href]="tel()">{{ 'site.faq.microcopy.cta' | t }}</a>
+    <p class="faq-micro__hint">{{ 'site.cta.microcopy' | t }}</p>
+  </div>
+</section>
+
+<section class="site-section container" aria-label="Contattaci">
+  <app-contact-cta />
+</section>

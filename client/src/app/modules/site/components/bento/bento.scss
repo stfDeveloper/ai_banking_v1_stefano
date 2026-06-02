@@ -1,0 +1,112 @@
+.bento {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--sp-4);
+}
+
+.bento__cell {
+  --spotlight-opacity: 0;
+  grid-column: span 3;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  min-height: 200px;
+  padding: var(--sp-6);
+  border-radius: var(--radius-lg);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--elev-1);
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform var(--dur-2) var(--ease-out), border-color var(--dur-2) var(--ease-out);
+}
+
+.bento__cell--lg {
+  grid-column: span 3;
+  min-height: 240px;
+}
+
+@media (min-width: 880px) {
+  .bento__cell--lg {
+    grid-column: span 4;
+  }
+  .bento__cell:not(.bento__cell--lg) {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 720px) {
+  .bento {
+    grid-template-columns: 1fr;
+  }
+  .bento__cell,
+  .bento__cell--lg {
+    grid-column: 1 / -1;
+    min-height: 160px;
+  }
+}
+
+.bento__cell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    var(--spotlight-radius, 320px) circle at var(--spotlight-x, 50%) var(--spotlight-y, 0%),
+    var(--spotlight-color, rgba(212, 162, 76, 0.18)),
+    transparent 65%
+  );
+  opacity: var(--spotlight-opacity, 0);
+  transition: opacity var(--dur-3) var(--ease-out);
+  z-index: -1;
+}
+
+.bento__cell:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-gold);
+  text-decoration: none;
+}
+
+.bento__beam {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--border-gold), transparent 50%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity var(--dur-3) var(--ease-out);
+  z-index: -1;
+}
+
+.bento__cell:hover .bento__beam {
+  opacity: 1;
+}
+
+.bento__arrow {
+  position: absolute;
+  top: var(--sp-5);
+  right: var(--sp-5);
+  color: var(--ink-muted);
+  transition: color var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out);
+}
+
+.bento__cell:hover .bento__arrow {
+  color: var(--gold-300);
+  transform: translate(2px, -2px);
+}
+
+.bento__title {
+  margin-top: auto;
+  font-size: var(--fs-3xl);
+  line-height: 1.1;
+  color: var(--ink-primary);
+}
+
+.bento__hint {
+  font-size: var(--fs-sm);
+  color: var(--ink-secondary);
+}

@@ -1,0 +1,33 @@
+<div class="problem-numbers" appReveal="fade">
+  <header class="problem-numbers__head">
+    <p class="eyebrow text-coral">{{ content.eyebrow }}</p>
+    <h2 class="problem-numbers__title">{{ content.title }}</h2>
+    <p class="problem-numbers__lead">{{ content.lead }}</p>
+  </header>
+
+  <div class="problem-numbers__grid">
+    <div class="problem-numbers__hero">
+      <span
+        class="problem-numbers__hero-value tnum"
+        [appCountUp]="content.hero.value"
+        [prefix]="content.hero.prefix || ''"
+        [suffix]="content.hero.suffix || ''"
+      ></span>
+      <span class="problem-numbers__hero-label">{{ content.hero.label }}</span>
+    </div>
+
+    <ul class="problem-numbers__support">
+      @for (item of content.support; track item.label) {
+        <li class="problem-numbers__support-item">
+          <span
+            class="problem-numbers__support-value tnum"
+            [appCountUp]="item.value"
+            [prefix]="item.prefix || ''"
+            [suffix]="item.suffix || ''"
+          ></span>
+          <span class="problem-numbers__support-label">{{ item.label }}</span>
+        </li>
+      }
+    </ul>
+  </div>
+</div>

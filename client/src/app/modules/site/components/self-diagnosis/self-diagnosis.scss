@@ -1,0 +1,118 @@
+.self-diagnosis {
+  padding: clamp(var(--sp-6), 4vw, var(--sp-10));
+  border-radius: var(--radius-xl);
+  background: linear-gradient(165deg, var(--bg-panel) 0%, var(--bg-canvas) 100%);
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.18);
+}
+
+.self-diagnosis__nav {
+  margin-bottom: var(--sp-4);
+}
+
+.self-diagnosis__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radius-pill);
+  background: var(--bg-translucent);
+  border: 1px solid var(--border-soft);
+  color: var(--ink-secondary);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+
+  &:hover {
+    border-color: var(--gold-500);
+    color: var(--ink-primary);
+  }
+}
+
+.self-diagnosis__head h2 {
+  font-size: clamp(1.5rem, 1.1rem + 1.5vw, 2.25rem);
+}
+
+.self-diagnosis__question {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.self-diagnosis__prompt {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: var(--sp-5);
+  padding: 0;
+}
+
+.self-diagnosis__options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-3);
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.self-diagnosis__option {
+  padding: var(--sp-5) var(--sp-6);
+  min-height: 3.5rem;
+  border-radius: var(--radius-lg);
+  background: var(--bg-panel);
+  border: 2px solid var(--border-soft);
+  color: var(--ink-primary);
+  font-size: var(--fs-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+
+  &:hover {
+    border-color: var(--gold-500);
+    transform: translateY(-1px);
+  }
+
+  &--selected {
+    border-color: var(--gold-400);
+    background: rgba(212, 162, 76, 0.12);
+    box-shadow: 0 0 0 1px rgba(212, 162, 76, 0.25);
+  }
+}
+
+.self-diagnosis__result {
+  text-align: center;
+  padding: var(--sp-6);
+  border-radius: var(--radius-lg);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-gold);
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+.self-diagnosis__result-title {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--sp-3);
+}
+
+.self-diagnosis__result-body {
+  color: var(--ink-secondary);
+  margin-bottom: var(--sp-5);
+}
+
+.self-diagnosis__restart {
+  display: block;
+  margin: var(--sp-5) auto 0;
+  background: none;
+  border: none;
+  color: var(--ink-muted);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: var(--fs-sm);
+}
+
+@media (max-width: 480px) {
+  .self-diagnosis__options {
+    grid-template-columns: 1fr;
+  }
+}

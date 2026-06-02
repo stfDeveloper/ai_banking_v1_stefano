@@ -1,0 +1,183 @@
+@if (page(); as p) {
+  <div class="service-page" [class]="'service-page--' + p.layout" [attr.data-accent]="p.accent">
+    <app-page-hero [content]="p.hero" [accent]="p.accent" />
+
+    @for (section of p.sectionOrder; track section; let i = $index) {
+      @switch (section) {
+        @case ('narrative') {
+          <section
+            class="site-section"
+            [ngClass]="sectionTone(section, i, p.layout)"
+            aria-labelledby="svc-narrative-title"
+          >
+            <div class="container">
+              <app-narrative [content]="p.narrative" [align]="narrativeAlign(p.layout)" />
+            </div>
+          </section>
+        }
+
+        @case ('beforeAfter') {
+          @if (p.beforeAfter.bridge; as bridge) {
+            <section class="site-section service-bridge" aria-labelledby="svc-ba-bridge-title">
+              <div class="container service-bridge__inner" appReveal="fade">
+                <p class="eyebrow text-accent">{{ bridge.eyebrow }}</p>
+                <h2 id="svc-ba-bridge-title" class="service-bridge__title">{{ bridge.headline }}</h2>
+                <p class="lead service-bridge__body">{{ bridge.body }}</p>
+              </div>
+            </section>
+          }
+          <section
+            class="site-section"
+            [ngClass]="sectionTone(section, i, p.layout)"
+            [class.service-before-after--featured]="p.layout === 'conti'"
+            aria-labelledby="svc-ba-title"
+          >
+            <div class="container">
+              <app-before-after [content]="p.beforeAfter" />
+            </div>
+          </section>
+        }
+
+        @case ('checks') {
+          @if (p.checks.bridge; as bridge) {
+            <section class="site-section service-bridge" aria-labelledby="svc-checks-bridge-title">
+              <div class="container service-bridge__inner" appReveal="fade">
+                <p class="eyebrow text-accent">{{ bridge.eyebrow }}</p>
+                <h2 id="svc-checks-bridge-title" class="service-bridge__title">{{ bridge.headline }}</h2>
+                <p class="lead service-bridge__body">{{ bridge.body }}</p>
+              </div>
+            </section>
+          }
+          <section
+            class="site-section"
+            [ngClass]="sectionTone(section, i, p.layout)"
+            aria-labelledby="svc-checks-title"
+          >
+            <div class="container">
+              <header class="section-head section-head--center" appReveal="fade">
+                <p class="eyebrow">{{ p.checks.eyebrow }}</p>
+                <h2 id="svc-checks-title">{{ p.checks.title }}</h2>
+              </header>
+              <app-check-trio [items]="checks" />
+            </div>
+          </section>
+        }
+
+        @case ('tipi') {
+          <section
+            class="site-section"
+            [ngClass]="sectionTone(section, i, p.layout)"
+            [class.service-tipi--featured]="p.layout === 'leasing'"
+            aria-labelledby="svc-tipi-title"
+          >
+            <div class="container">
+              <header class="section-head" appReveal="fade">
+                <h2 id="svc-tipi-title">{{ p.tipi.title }}</h2>
+              </header>
+              <ul class="chips" appReveal="stagger">
+                @for (item of p.tipi.items; track item) {
+                  <li class="chip">{{ item }}</li>
+                }
+              </ul>
+
+              <div class="docs" appReveal="fade">
+                <p class="docs__title">{{ p.documenti.title }}</p>
+                <ul class="chips chips--soft">
+                  @for (item of p.documenti.items; track item) {
+                    <li class="chip chip--soft">{{ item }}</li>
+                  }
+                </ul>
+              </div>
+            </div>
+          </section>
+        }
+
+        @case ('outcomes') {
+          <section
+            class="site-section"
+            [ngClass]="sectionTone(section, i, p.layout)"
+            [class.service-outcomes--featured]="p.layout === 'finanziamenti'"
+            aria-labelledby="svc-outcomes-title"
+          >
+            <div class="container">
+              <app-outcomes-grid
+                [eyebrow]="p.outcomesIntro.eyebrow"
+                [title]="p.outcomesIntro.title"
+                [lead]="p.outcomesIntro.lead"
+                [items]="p.outcomes"
+              />
+            </div>
+          </section>
+        }
+
+        @case ('stakes') {
+          <section
+            class="site-section"
+            [ngClass]="sectionTone(section, i, p.layout)"
+            aria-labelledby="svc-stakes-title"
+          >
+            <div class="container">
+              <app-stakes [content]="p.stakes" />
+            </div>
+          </section>
+        }
+
+        @case ('estinto') {
+          <section class="site-section" [ngClass]="sectionTone(section, i, p.layout)">
+            <div class="container">
+              <div class="estinto" appReveal="fade">
+                <span class="estinto__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 16 14" />
+                  </svg>
+                </span>
+                <div class="estinto__copy">
+                  <p class="eyebrow text-emerald">{{ 'site.common.estintoEyebrow' | t }}</p>
+                  <h3 class="estinto__title">{{ p.estinto.title }}</h3>
+                  <p class="estinto__body">{{ p.estinto.body }}</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        }
+
+        @case ('stepper') {
+          <section
+            class="site-section"
+            [ngClass]="sectionTone(section, i, p.layout)"
+            aria-labelledby="svc-flow-title"
+          >
+            <div class="container">
+              <header class="section-head section-head--center" appReveal="fade">
+                <p class="eyebrow">{{ 'site.shared.stepper.eyebrow' | t }}</p>
+                <h2 id="svc-flow-title">{{ 'site.shared.stepper.title' | t }}</h2>
+              </header>
+              <app-stepper [steps]="steps" />
+            </div>
+          </section>
+        }
+
+        @case ('stats') {
+          <section class="site-section" [ngClass]="sectionTone(section, i, p.layout)">
+            <div class="container">
+              <app-stat-band [items]="stats" />
+            </div>
+          </section>
+        }
+
+        @case ('authority') {
+          <section class="site-section" [ngClass]="sectionTone(section, i, p.layout)">
+            <div class="container">
+              <app-authority-band [content]="authority" />
+            </div>
+          </section>
+        }
+      }
+    }
+
+    <section class="site-section container" aria-label="Contattaci">
+      <app-contact-cta />
+    </section>
+  </div>
+}

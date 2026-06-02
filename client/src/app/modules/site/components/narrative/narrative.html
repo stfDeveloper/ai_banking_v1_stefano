@@ -1,0 +1,23 @@
+<article
+  class="narrative"
+  [class.narrative--right]="align === 'right'"
+  appReveal="fade"
+>
+  <div class="narrative__copy">
+    <p class="eyebrow text-accent">{{ content.eyebrow }}</p>
+    <h2 class="narrative__headline">{{ content.headline }}</h2>
+    <p class="narrative__body">{{ content.body }}</p>
+    @if (linkPath) {
+      <a class="btn btn-ghost btn-lg narrative__cta focusable" [routerLink]="linkPath">{{ linkLabel }}</a>
+    }
+  </div>
+  <div class="narrative__aside" aria-hidden="true">
+    <div class="narrative__figure">
+      <svg viewBox="0 0 120 120" width="120" height="120" fill="none">
+        <rect x="8" y="8" width="104" height="104" rx="16" stroke="currentColor" stroke-width="1.2" opacity="0.25" />
+        <path d="M36 72V48l24-16 24 16v24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5" />
+        <circle cx="60" cy="56" r="6" fill="currentColor" opacity="0.35" />
+      </svg>
+    </div>
+  </div>
+</article>

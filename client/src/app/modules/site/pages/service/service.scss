@@ -1,0 +1,146 @@
+.chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.service-page {
+  --service-bridge-max: 62ch;
+}
+
+.service-bridge__inner {
+  max-width: var(--service-bridge-max);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.service-bridge__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2.35rem);
+  line-height: 1.15;
+  margin-block: var(--sp-3) var(--sp-4);
+}
+
+.service-bridge__body {
+  color: var(--ink-secondary);
+}
+
+.service-before-after--featured {
+  padding-block: clamp(var(--sp-10), 6vw, var(--sp-16));
+}
+
+.service-before-after--featured app-before-after {
+  display: block;
+  padding: clamp(var(--sp-6), 3vw, var(--sp-10));
+  border-radius: var(--radius-xl);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-default);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.service-tipi--featured .chips {
+  justify-content: center;
+  gap: var(--sp-4);
+}
+
+.service-tipi--featured .chip {
+  padding: 0.75rem 1.25rem;
+  font-size: var(--fs-md);
+  border-color: rgba(46, 196, 182, 0.35);
+}
+
+.service-outcomes--featured {
+  padding-block: clamp(var(--sp-10), 6vw, var(--sp-16));
+}
+
+.service-page--finanziamenti .page-hero {
+  --page-accent: var(--coral-400);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-default);
+  color: var(--ink-primary);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+.chip--soft {
+  background: var(--bg-translucent);
+  border-color: var(--border-soft);
+  color: var(--ink-secondary);
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+}
+
+/* Banner estinto */
+.estinto {
+  display: flex;
+  gap: var(--sp-5);
+  align-items: flex-start;
+  padding: clamp(var(--sp-6), 3vw, var(--sp-10));
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(46, 196, 182, 0.1), var(--bg-panel) 60%);
+  border: 1px solid rgba(46, 196, 182, 0.28);
+}
+
+.estinto__icon {
+  flex-shrink: 0;
+  display: inline-grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: rgba(46, 196, 182, 0.12);
+  color: var(--emerald-400);
+  border: 1px solid rgba(46, 196, 182, 0.3);
+}
+
+.estinto__copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.estinto__title {
+  font-size: var(--fs-2xl);
+  color: var(--ink-primary);
+}
+
+.estinto__body {
+  color: var(--ink-secondary);
+  max-width: 60ch;
+}
+
+/* Flow section bg */
+.home-why2 {
+  background: var(--bg-canvas);
+  border-block: 1px solid var(--border-soft);
+}
+
+.docs {
+  margin-top: var(--sp-10);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  align-items: center;
+  text-align: center;
+}
+
+.docs__title {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.docs .chips {
+  justify-content: center;
+}

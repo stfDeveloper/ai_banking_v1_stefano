@@ -1,0 +1,29 @@
+.urgency-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(228, 88, 88, 0.1);
+  border: 1px solid rgba(228, 88, 88, 0.35);
+  color: var(--coral-300);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.urgency-pill__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--coral-400);
+  box-shadow: 0 0 10px rgba(228, 88, 88, 0.8);
+  animation: pulse-soft 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .urgency-pill__dot {
+    animation: none;
+  }
+}

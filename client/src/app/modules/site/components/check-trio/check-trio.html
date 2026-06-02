@@ -1,0 +1,38 @@
+<div class="check-trio" appReveal="stagger">
+  @for (item of items; track item.title; let i = $index) {
+    <article class="check-card">
+      <span class="check-card__icon" aria-hidden="true">
+        @switch (icon(i)) {
+          @case ('scale') {
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+              stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v18" /><path d="M5 7h14" /><path d="M5 7l-3 6h6z" /><path d="M19 7l-3 6h6z" />
+              <path d="M7 20h10" />
+            </svg>
+          }
+          @case ('alert') {
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+              stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z" />
+              <line x1="12" y1="9" x2="12" y2="13" /><line x1="12" y1="17" x2="12.01" y2="17" />
+            </svg>
+          }
+          @default {
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+              stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" />
+              <line x1="8" y1="13" x2="16" y2="13" /><line x1="8" y1="17" x2="13" y2="17" />
+            </svg>
+          }
+        }
+      </span>
+
+      <h3 class="check-card__title">{{ item.title }}</h3>
+      <p class="check-card__oneliner">{{ item.oneLiner }}</p>
+
+      <app-disclosure>
+        <p>{{ item.detail }}</p>
+      </app-disclosure>
+    </article>
+  }
+</div>

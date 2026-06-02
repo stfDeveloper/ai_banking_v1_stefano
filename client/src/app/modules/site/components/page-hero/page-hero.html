@@ -1,0 +1,26 @@
+<section
+  class="page-hero"
+  [class.page-hero--urgent]="urgent"
+  [attr.data-accent]="accent || null"
+  aria-labelledby="page-hero-title"
+>
+  <app-aurora-bg />
+
+  <div class="container page-hero__inner" appReveal="fade">
+    <div class="page-hero__meta">
+      <p class="eyebrow page-hero__eyebrow">{{ content.eyebrow }}</p>
+      @if (deadline) {
+        <app-urgency-pill [label]="deadline" />
+      }
+    </div>
+
+    <h1 id="page-hero-title" class="page-hero__title">{{ content.title }}</h1>
+    <p class="lead page-hero__lead">{{ content.lead }}</p>
+
+    @if (showCta) {
+      <div class="page-hero__cta">
+        <app-contact-cta [variant]="urgent ? 'urgent' : 'default'" />
+      </div>
+    }
+  </div>
+</section>

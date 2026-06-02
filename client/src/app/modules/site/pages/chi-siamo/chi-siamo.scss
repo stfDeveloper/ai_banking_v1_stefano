@@ -1,0 +1,101 @@
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+}
+
+@media (max-width: 880px) {
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+}
+
+.timeline__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-6);
+  border-radius: var(--radius-lg);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+  border-top: 3px solid var(--gold-400);
+}
+
+.timeline__year {
+  font-family: var(--font-display);
+  font-size: var(--fs-4xl);
+  color: var(--gold-400);
+  line-height: 1;
+}
+
+.timeline__title {
+  font-size: var(--fs-xl);
+  color: var(--ink-primary);
+}
+
+.timeline__body {
+  color: var(--ink-secondary);
+}
+
+/* Metodo / Annibali */
+.metodo {
+  max-width: var(--container-reading);
+  margin-inline: auto;
+  padding: clamp(var(--sp-8), 4vw, var(--sp-12));
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(212, 162, 76, 0.08), var(--bg-panel) 60%);
+  border: 1px solid var(--border-gold);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.metodo__title {
+  font-size: clamp(1.75rem, 1.2rem + 2vw, 2.5rem);
+  line-height: 1.15;
+}
+
+.metodo__body {
+  font-size: var(--fs-lg);
+  color: var(--ink-secondary);
+}
+
+.metodo__note {
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+}
+
+.cs-quote {
+  max-width: var(--container-reading);
+  margin-inline: auto;
+}
+
+.cs-modi {
+  background: var(--bg-canvas);
+  border-block: 1px solid var(--border-soft);
+}
+
+.chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-default);
+  color: var(--ink-primary);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}

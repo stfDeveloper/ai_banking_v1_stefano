@@ -1,0 +1,75 @@
+<div data-accent="gold">
+  <app-page-hero [content]="hero" [showCta]="false" accent="gold" />
+
+  <!-- Perché esistiamo -->
+  <section class="site-section site-section--canvas" aria-labelledby="cs-narrative-title">
+    <div class="container">
+      <app-narrative [content]="narrative" align="left" />
+    </div>
+  </section>
+
+  <!-- Timeline storia -->
+  <section class="site-section site-section--deep" aria-labelledby="cs-timeline-title">
+    <div class="container">
+      <app-story-timeline
+        eyebrow="{{ 'site.chiSiamo.hero.eyebrow' | t }}"
+        title="{{ 'site.chiSiamo.hero.title' | t }}"
+        [chapters]="timeline"
+      />
+    </div>
+  </section>
+
+  <!-- Quote valori -->
+  <section class="site-section site-section--panel">
+    <div class="container">
+      <blockquote class="pull-quote cs-quote" appReveal="fade">
+        {{ 'site.chiSiamo.quote' | t }}
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Metodo / Annibali -->
+  <section class="site-section site-section--canvas" aria-labelledby="cs-metodo-title">
+    <div class="container">
+      <div class="metodo" appReveal="fade">
+        <p class="eyebrow text-gold">{{ 'site.chiSiamo.metodo.eyebrow' | t }}</p>
+        <h2 id="cs-metodo-title" class="metodo__title">{{ 'site.chiSiamo.metodo.title' | t }}</h2>
+        <p class="metodo__body">{{ 'site.chiSiamo.metodo.body' | t }}</p>
+        <p class="metodo__note">{{ 'site.chiSiamo.metodo.note' | t }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authority -->
+  <section class="site-section site-section--deep">
+    <div class="container">
+      <app-authority-band [content]="authority" />
+    </div>
+  </section>
+
+  <!-- Stat band -->
+  <section class="site-section site-section--canvas">
+    <div class="container">
+      <app-stat-band [items]="stats" />
+    </div>
+  </section>
+
+  <!-- Modi di lavoro -->
+  <section class="site-section site-section--panel cs-modi" aria-labelledby="cs-modi-title">
+    <div class="container">
+      <header class="section-head" appReveal="fade">
+        <h2 id="cs-modi-title">{{ 'site.chiSiamo.modi.title' | t }}</h2>
+      </header>
+      <ul class="chips" appReveal="stagger">
+        @for (item of modi; track item) {
+          <li class="chip">{{ item }}</li>
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="site-section container" aria-label="Contattaci">
+    <app-contact-cta />
+  </section>
+</div>

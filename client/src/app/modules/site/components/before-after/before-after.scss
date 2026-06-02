@@ -1,0 +1,111 @@
+.before-after__head {
+  margin-bottom: var(--sp-6);
+}
+
+.before-after__title {
+  font-size: clamp(1.35rem, 1rem + 1.2vw, 2rem);
+  margin-top: var(--sp-3);
+}
+
+.before-after__ledger {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-panel);
+}
+
+.before-after__row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  border-bottom: 1px solid var(--border-soft);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &--header {
+    background: var(--bg-elevated);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+}
+
+.before-after__cell {
+  padding: var(--sp-4) var(--sp-5);
+  position: relative;
+
+  &--label {
+    color: var(--ink-secondary);
+    font-weight: 500;
+  }
+
+  &--before {
+    color: var(--coral-300);
+    text-decoration: line-through;
+    text-decoration-color: rgba(240, 136, 130, 0.5);
+  }
+
+  &--after {
+    color: var(--emerald-300);
+    font-weight: 600;
+  }
+}
+
+.before-after__bar {
+  display: block;
+  height: 3px;
+  margin-top: var(--sp-2);
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--emerald-500), var(--emerald-300));
+  width: 65%;
+  animation: bar-shrink 1.2s ease-out forwards;
+}
+
+@keyframes bar-shrink {
+  from {
+    width: 100%;
+    opacity: 0.3;
+  }
+  to {
+    width: 65%;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .before-after__bar {
+    animation: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .before-after__row {
+    grid-template-columns: 1fr;
+    gap: var(--sp-1);
+    padding: var(--sp-3) var(--sp-4);
+  }
+
+  .before-after__row--header {
+    display: none;
+  }
+
+  .before-after__cell {
+    padding: var(--sp-1) 0;
+
+    &--before::before {
+      content: 'Prima: ';
+      color: var(--ink-muted);
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    &--after::before {
+      content: 'Dopo: ';
+      color: var(--ink-muted);
+      font-weight: 400;
+    }
+  }
+}

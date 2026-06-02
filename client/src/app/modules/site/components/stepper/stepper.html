@@ -1,0 +1,12 @@
+<ol class="stepper" appReveal="stagger">
+  @for (step of steps; track step.num) {
+    <li class="stepper__step">
+      <span class="stepper__num">{{ step.num }}</span>
+      <span class="stepper__line" aria-hidden="true"></span>
+      <div class="stepper__body">
+        <h3 class="stepper__title">{{ step.title }}</h3>
+        <p class="stepper__text">{{ step.body }}</p>
+      </div>
+    </li>
+  }
+</ol>

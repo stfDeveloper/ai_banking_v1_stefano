@@ -1,0 +1,27 @@
+@if (eyebrow || title) {
+  <header class="section-head" appReveal="fade">
+    @if (eyebrow) {
+      <p class="eyebrow text-coral">{{ eyebrow }}</p>
+    }
+    @if (title) {
+      <h2>{{ title }}</h2>
+    }
+  </header>
+}
+
+<ol class="story-timeline" appReveal="stagger">
+  @for (chapter of chapters; track chapter.title; let i = $index) {
+    <li class="story-timeline__chapter">
+      <span class="story-timeline__marker" aria-hidden="true">
+        <span class="story-timeline__dot"></span>
+      </span>
+      <div class="story-timeline__content">
+        @if (chapter.year) {
+          <span class="story-timeline__year tnum">{{ chapter.year }}</span>
+        }
+        <h3 class="story-timeline__title">{{ chapter.title }}</h3>
+        <p class="story-timeline__body">{{ chapter.body }}</p>
+      </div>
+    </li>
+  }
+</ol>

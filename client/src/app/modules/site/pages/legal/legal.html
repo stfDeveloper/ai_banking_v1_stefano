@@ -1,0 +1,19 @@
+@if (page(); as p) {
+  <section class="legal" aria-labelledby="legal-title">
+    <div class="container-reading" appReveal="fade">
+      <header class="legal__head">
+        <h1 id="legal-title" class="legal__title">{{ p.title }}</h1>
+        <p class="legal__updated">{{ p.updated }}</p>
+      </header>
+
+      @for (sec of p.sections; track sec.h) {
+        <section class="legal__section">
+          <h2 class="legal__h">{{ sec.h }}</h2>
+          @for (para of sec.p; track para) {
+            <p class="legal__p">{{ para }}</p>
+          }
+        </section>
+      }
+    </div>
+  </section>
+}

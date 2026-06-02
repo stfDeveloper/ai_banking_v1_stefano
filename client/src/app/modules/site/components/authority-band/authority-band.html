@@ -1,0 +1,16 @@
+<div class="authority-band" appReveal="fade">
+  <header class="authority-band__head section-head section-head--center">
+    <p class="eyebrow">{{ content.eyebrow }}</p>
+    <h2>{{ content.title }}</h2>
+  </header>
+
+  <div class="authority-band__norms">
+    @for (norm of content.norms; track norm) {
+      <span class="tag-norm">{{ norm }}</span>
+    }
+  </div>
+
+  <div class="authority-band__marquee">
+    <app-marquee [items]="content.sentenze" [duration]="35" />
+  </div>
+</div>

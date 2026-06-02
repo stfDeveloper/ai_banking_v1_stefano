@@ -1,0 +1,11 @@
+.site-main {
+  display: block;
+  min-height: 60vh;
+}
+
+/* Leave room for the fixed mobile contact bar */
+@media (max-width: 1079px) {
+  .site-main {
+    padding-bottom: 64px;
+  }
+}
